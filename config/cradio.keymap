@@ -188,7 +188,7 @@ ZMK_MACRO(t_kpane,
             combo_enter {
             timeout-ms = <50>;
             key-positions = <22 23>;
-            bindings = <&kp RET>;
+            bindings = <&none>;
         };
          combo_sk_lgui {
             timeout-ms = <50>;
@@ -234,7 +234,11 @@ ZMK_MACRO(t_kpane,
             key-positions = <21 22 23>;
             bindings = <&kp LG(V)>;
         };
-        
+            combo_none {
+            timeout-ms = <120>;
+            key-positions = <11 12 13>;
+            bindings = <&kp LG(V)>;
+        };
         
 
         
@@ -248,7 +252,7 @@ ZMK_MACRO(t_kpane,
 		&kp Q       &kp W &kp F   &kp P &kp B                           &kp J           &kp L  &kp U        &kp Y   &kp QUOT
 		&kp A       &kp R &kp S   &kp T &lt 3 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &kp O    
 		&mt LSFT Z  &kp X &kp C   &kp D &kp V				            &kp K           &kp H  &kp COMMA    &kp DOT &mt LSFT RET
-          				&key_repeat &sl 2  	        			&kp SPC &mo 5 
+          				&mt LSFT &key_repeat &sl 2  	        			&kp SPC &mo 5 
 		>;
 		};
 
@@ -266,7 +270,7 @@ ZMK_MACRO(t_kpane,
 		&sk LSHIFT  &kp AT      &kp LBRC    &kp RBRC    &kp SEMICOLON		        &kp GRAVE     &kp CARET &none       &kp HASH  &none 
 		&kp LBKT    &kp RBKT    &kp LPRN    &kp RPRN    &mo 3 		                &lt 1 EQUAL   &kp MINUS &kp PLUS    &kp FSLH  &kp PERCENT
 		&none       &none 	    &sk LGUI    &kp HASH    &kp PIPE 	                &kp AMPS      &kp UNDER &kp DLLR    &kp EXCL  &kp TILDE 
-					                        &trans      &sk LSFT  		            &sk LSFT      &sl 4 
+					                        &trans      &sk LSFT  		            &caps_word      &sl 4 
 		>;
 		};
 
@@ -290,7 +294,7 @@ ZMK_MACRO(t_kpane,
 		
 		helper_layer {
 		bindings = <
-		&kp LS(F14) &kp LS(F15) &kp LS(F16) &kp LS(F17) &kp LS(F18) 		    &none           &none       &none              &none       &none
+		&kp LS(F14) &kp LS(F15) &kp LS(F16) &kp LS(F17) &kp LS(F18) 		    &none           &none       &none              &reset       &bootloader
 		&kp LS(F24) &kp LS(F18) &kp LS(F19) &kp LS(F20) &kp LS(F21)  		    &kp LEFT        &trans      &trans             &kp RIGHT   &kp K_MUTE 
 		&kp LS(F9)  &kp LS(F10) &kp LS(F11) &kp LS(F12) &kp LS(F13)   			&none           &kp C_PREV  &kp C_PP           &kp C_NEXT  &trans   
 					                        &trans      &trans  			    &trans &trans 
