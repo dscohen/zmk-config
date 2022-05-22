@@ -134,7 +134,7 @@ ZMK_MACRO(t_new,
 ZMK_MACRO(t_name,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp RC(B) &kp COMM >;
+        bindings = <&kp RC(B) &kp COMMA >;
     )
 
 ZMK_MACRO(t_kpane,
@@ -247,7 +247,7 @@ ZMK_MACRO(t_kpane,
 		bindings = <
 		&kp Q &kp W &kp F &kp P &kp B                           &kp J            &kp L  &kp U    &kp Y   &kp QUOT
 		&kp A &kp R &kp S &kp T &lt arrows_layer G 		   	    &lt nums_layer M &kp N &kp E &kp I &kp O    
-		&mt LSFT Z &kp X &kp C &kp D &kp V				        &kp K            &kp H  &kp CMMA &kp DOT &mt LSFT RET
+		&mt LSFT Z &kp X &kp C &kp D &kp V				        &kp K            &kp H  &kp COMMA &kp DOT &mt LSFT RET
           				&key_repeat &sl 2  	        			&kp SPC &mo helper_layer 
 		>;
 		};
@@ -300,7 +300,7 @@ ZMK_MACRO(t_kpane,
 		bindings = <
         &kp LC(LS(LA(Q)))    &kp LC(LS(LA(W)))    &kp LC(LS(LA(F)))    &kp LC(LS(LA(P)))    &kp LC(LS(LA(B)))            &kp LC(LS(LA(J)))    &kp LC(LS(LA(L)))   &kp LC(LS(LA(U)))        &kp LC(LS(LA(Y))) &kp LC(LS(LA(QUOT)))
         &kp LC(LS(LA(A)))    &kp LC(LS(LA(R)))    &kp LC(LS(LA(S)))    &kp LC(LS(LA(T)))    &kp LC(LS(LA(G)))            &kp LC(LS(LA(M)))    &kp LC(LS(LA(N)))   &kp LC(LS(LA(E)))       &kp LC(LS(LA(I)))   &kp LC(LS(LA(O)))
-        &kp LC(LS(LA(Z)))    &kp LC(LS(LA(X)))    &kp LC(LS(LA(C)))    &kp LC(LS(LA(D)))    &kp LC(LS(LA(V)))            &kp LC(LS(LA(K)))    &kp LC(LS(LA(H)))   &kp LC(LS(LA(COMM)))      &kp LC(LS(LA(DOT))) &kp LC(LS(LA(SLSH)))
+        &kp LC(LS(LA(Z)))    &kp LC(LS(LA(X)))    &kp LC(LS(LA(C)))    &kp LC(LS(LA(D)))    &kp LC(LS(LA(V)))            &kp LC(LS(LA(K)))    &kp LC(LS(LA(H)))   &kp LC(LS(LA(COMMA)))      &kp LC(LS(LA(DOT))) &kp LC(LS(LA(SLSH)))
                         &kp LC(LS(LA(EQL))) &kp LC(LS(LA(AMPS)))                                                                 &kp LC(LS(LA(SPACE))) &kp LC(LS(LA(EXCL))) 
 		>;
 		}; 
