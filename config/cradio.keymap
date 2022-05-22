@@ -256,7 +256,7 @@ ZMK_MACRO(t_kpane,
 		bindings = <
 		&kp NUM_5   &kp NUM_6    &kp NUM_7  &kp NUM_8   &kp NUM_9		        &kp EQUAL   &kp LBKT &none      &none   &none
 		&kp NUM_0   &kp NUM_1    &kp NUM_2  &kp NUM_3   &lt 3 NUM_4 		    &trans      &kp LGUI &kp RBKT   &none   &none 
-		&kp C0MMA   &kp DOT 	 &sk LGUI   &none       &none  	                &kp MINUS   &kp RBKT &none      &none   &none  
+		&kp COMMA   &kp DOT 	 &sk LGUI   &none       &none  	                &kp MINUS   &kp RBKT &none      &none   &none  
 					                        &trans      &trans                 &trans &trans 
 		>;
 		};
