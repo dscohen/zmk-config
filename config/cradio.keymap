@@ -227,7 +227,7 @@ ZMK_MACRO(t_kpane,
            combo_alfred {
             timeout-ms = <50>;
             key-positions = <6 16>;
-            bindings = <&kp LA(SPACE))>;
+            bindings = <&kp LA(SPACE)>;
         };
            combo_paste {
             timeout-ms = <80>;
