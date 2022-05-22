@@ -258,7 +258,7 @@ ZMK_MACRO(t_kpane,
 
        		nums_layer {
 		bindings = <
-		&kp NUM_5   &kp NUM_6    &kp NUM_7  &kp NUM_8   &kp NUM_9		        &kp EQUAL   &kp LBKT &none      &none   &none
+		&kp NUM_5   &kp NUM_6    &kp NUM_7  &kp NUM_8   &kp NUM_9		        &kp EQUAL   &kp LBKT &none      &reset   &bootloader
 		&kp NUM_0   &kp NUM_1    &kp NUM_2  &kp NUM_3   &lt 3 NUM_4 		    &trans      &kp LGUI &kp RBKT   &none   &none 
 		&kp COMMA   &kp DOT 	 &sk LGUI   &none       &none  	                &kp MINUS   &kp RBKT &none      &none   &none  
 					                        &trans      &trans                 &trans &trans 
@@ -276,7 +276,7 @@ ZMK_MACRO(t_kpane,
 
 		arrows_layer {
 		bindings = <
-		&none       &none       &none       &none       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LA(RIGHT)  &kp X &kp LG(UP) 
+		&bootloader &reset       &none       &none       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LA(RIGHT)  &kp X &kp LG(UP) 
 		&none       &none       &none       &none       &trans 			        &kp LEFT        &kp DOWN      &kp UP           &kp RIGHT     &trans 
 		&none       &none       &none       &none       &none                   &kp BSLH        &trans        &trans           &trans        &kp LG(DOWN)
 					                        &trans      &trans                  &kp SPC  &trans 
@@ -294,7 +294,7 @@ ZMK_MACRO(t_kpane,
 		
 		helper_layer {
 		bindings = <
-		&kp LS(F14) &kp LS(F15) &kp LS(F16) &kp LS(F17) &kp LS(F18) 		    &none           &none       &none              &reset       &bootloader
+		&kp LS(F14) &kp LS(F15) &kp LS(F16) &kp LS(F17) &kp LS(F18) 		    &none           &none       &none              &none       &none
 		&kp LS(F24) &kp LS(F18) &kp LS(F19) &kp LS(F20) &kp LS(F21)  		    &kp LEFT        &trans      &trans             &kp RIGHT   &kp K_MUTE 
 		&kp LS(F9)  &kp LS(F10) &kp LS(F11) &kp LS(F12) &kp LS(F13)   			&none           &kp C_PREV  &kp C_PP           &kp C_NEXT  &trans   
 					                        &trans      &trans  			    &trans &trans 
