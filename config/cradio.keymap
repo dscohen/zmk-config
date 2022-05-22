@@ -188,7 +188,7 @@ ZMK_MACRO(t_kpane,
             combo_enter {
             timeout-ms = <50>;
             key-positions = <22 23>;
-            bindings = <&kp ENT>;
+            bindings = <&kp RET>;
         };
          combo_sk_lgui {
             timeout-ms = <50>;
