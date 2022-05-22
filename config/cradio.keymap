@@ -272,7 +272,7 @@ ZMK_MACRO(t_kpane,
 
 		arrows_layer {
 		bindings = <
-		&none       &none       &none       &none       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LALT(RIGHT)  &kp LG(RIGHT) &kp LG(UP) 
+		&none       &none       &none       &none       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LA(RIGHT)  &kp X &kp LG(UP) 
 		&none       &none       &none       &none       &trans 			        &kp LEFT        &kp DOWN      &kp UP           &kp RIGHT     &trans 
 		&none       &none       &none       &none       &none                   &kp BSLH        &trans        &trans           &trans        &kp LG(DOWN)
 					                        &trans      &trans                  &kp SPC  &trans 
@@ -281,19 +281,19 @@ ZMK_MACRO(t_kpane,
 
         tmux_layer {
 		bindings = <
-		&t_5        &t_6         &t_7    &t_8    &t_9    			&kp RC(B) &none &none   &none    &t_scroll  
-		&t_0        &t_1    &t_2    &t_3    &t_4 			&t_LEFT &t_DOWN &t_UP &t_RIGHT    &none 
-		&t_hsplit   &none   &none   &none   &t_vsplit     			&t_kpane &t_new &t_name &none  &none 
-					                &trans  &trans 			                    &trans  &trans 
+		&t_5        &t_6       &t_7         &t_8        &t_9    			    &kp RC(B)       &none       &none              &none        &t_scroll  
+		&t_0        &t_1       &t_2         &t_3        &t_4 			        &t_LEFT         &t_DOWN     &t_UP              &t_RIGHT     &none 
+		&t_hsplit   &none      &none        &none       &t_vsplit               &t_kpane        &t_new      &t_name            &none        &none 
+					                        &trans      &trans 			        &trans  &trans 
 		>;
 		};	
 		
 		helper_layer {
 		bindings = <
-		&kp LS(F14)  &kp LS(F15)    &kp LS(F16)    &kp LS(F17)    &kp LS(F18) 		&none &none   &none   &none  &none
-		&kp LS(F24) &kp LS(F18) &kp LS(F19) &kp LS(F20) &kp LS(F21)  				&kp LEFT &trans  &trans &kp RIGHT &kp K_MUTE 
-		&kp LS(F9)  &kp LS(F10)  &kp LS(F11) &kp LS(F12) &kp LS(F13)   				&none &kp C_PREV  &kp C_PP  &kp C_NEXT &trans   
-					 &trans &trans  					                                        &trans &trans 
+		&kp LS(F14)  kp LS(F15) &kp LS(F16) &kp LS(F17) &kp LS(F18) 		    &none           &none       &none              &none       &none
+		&kp LS(F24) &kp LS(F18) &kp LS(F19) &kp LS(F20) &kp LS(F21)  		    &kp LEFT        &trans      &trans             &kp RIGHT   &kp K_MUTE 
+		&kp LS(F9)  &kp LS(F10) &kp LS(F11) &kp LS(F12) &kp LS(F13)   			&none           &kp C_PREV  &kp C_PP           &kp C_NEXT  &trans   
+					                        &trans      &trans  			    &trans &trans 
 		>;
 		};	
         window_layer {
@@ -301,7 +301,7 @@ ZMK_MACRO(t_kpane,
         &kp LC(LS(LA(Q)))    &kp LC(LS(LA(W)))    &kp LC(LS(LA(F)))    &kp LC(LS(LA(P)))    &kp LC(LS(LA(B)))            &kp LC(LS(LA(J)))    &kp LC(LS(LA(L)))   &kp LC(LS(LA(U)))        &kp LC(LS(LA(Y))) &kp LC(LS(LA(QUOT)))
         &kp LC(LS(LA(A)))    &kp LC(LS(LA(R)))    &kp LC(LS(LA(S)))    &kp LC(LS(LA(T)))    &kp LC(LS(LA(G)))            &kp LC(LS(LA(M)))    &kp LC(LS(LA(N)))   &kp LC(LS(LA(E)))       &kp LC(LS(LA(I)))   &kp LC(LS(LA(O)))
         &kp LC(LS(LA(Z)))    &kp LC(LS(LA(X)))    &kp LC(LS(LA(C)))    &kp LC(LS(LA(D)))    &kp LC(LS(LA(V)))            &kp LC(LS(LA(K)))    &kp LC(LS(LA(H)))   &kp LC(LS(LA(COMMA)))      &kp LC(LS(LA(DOT))) &kp LC(LS(LA(SLASH)))
-                        &kp LC(LS(LA(EQUAL))) &kp LC(LS(LA(AMPS)))                                                                 &kp LC(LS(LA(SPACE))) &kp LC(LS(LA(EXCL))) 
+                                                                       &kp LC(LS(LA(EQUAL))) &kp LC(LS(LA(AMPS)))        &kp LC(LS(LA(SPACE))) &kp LC(LS(LA(EXCL))) 
 		>;
 		}; 
 	};
