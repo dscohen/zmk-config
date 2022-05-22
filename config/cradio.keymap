@@ -217,7 +217,7 @@ ZMK_MACRO(t_kpane,
            combo_meh_layer {
             timeout-ms = <50>;
             key-positions = <3 13>;
-            bindings = <&sl window_layer>;
+            bindings = <&sl 6>;
         };
            combo_copy {
             timeout-ms = <80>;
