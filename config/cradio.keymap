@@ -246,27 +246,27 @@ ZMK_MACRO(t_kpane,
        		default_layer {
 		bindings = <
 		&kp Q &kp W &kp F &kp P &kp B                           &kp J            &kp L  &kp U    &kp Y   &kp QUOT
-		&kp A &kp R &kp S &kp T &lt arrows_layer G 		   	    &lt nums_layer M &kp N &kp E &kp I &kp O    
+		&kp A &kp R &kp S &kp T &lt 3 G 		   	    &lt 1 M &kp N &kp E &kp I &kp O    
 		&mt LSFT Z &kp X &kp C &kp D &kp V				        &kp K            &kp H  &kp COMMA &kp DOT &mt LSFT RET
-          				&key_repeat &sl 2  	        			&kp SPC &mo helper_layer 
+          				&key_repeat &sl 2  	        			&kp SPC &mo 5 
 		>;
 		};
 
        		nums_layer {
 		bindings = <
 		&kp NUM_5   &kp NUM_6    &kp NUM_7    &kp NUM_8    &kp NUM_9		            &kp EQUAL   &kp LBKT &none  &none  &none
-		&kp NUM_0   &kp NUM_1    &kp NUM_2    &kp NUM_3    &lt arrows_layer NUM_4 		&trans   &kp LGUI  &kp RBKT &none   &none 
+		&kp NUM_0   &kp NUM_1    &kp NUM_2    &kp NUM_3    &lt 3 NUM_4 		&trans   &kp LGUI  &kp RBKT &none   &none 
 		&kp CMMA    &kp DOT 	&sk LGUI      &none           &none  	                &kp MINUS &kp RBKT &none  &none   &none  
-					                            &trans  &sl syms_layer                &trans &trans 
+					                            &trans  &trans                 &trans &trans 
 		>;
 		};
 
         syms_layer {
 		bindings = <                                                                                                     
 		&sk LSHIFT   &kp AT    &kp LBRC    &kp RBRC    &kp SEMICOLON		            &kp GRAVE              &kp CARET &none &kp HASH &none 
-		&kp LBKT   &kp RBKT    &kp LPRN    &kp RPRN    &mo arrows_layer 		&lt nums_layer EQUAL   &kp MINUS  &kp PLUS &kp FSLH  &kp PERCENT
+		&kp LBKT   &kp RBKT    &kp LPRN    &kp RPRN    &mo 3 		&lt 1 EQUAL   &kp MINUS  &kp PLUS &kp FSLH  &kp PERCENT
 		&none    &none 	&sk LGUI  &kp NON_US_HASH  &kp PIPE 	                &kp AMPS            &kp UNDER &kp DLLR &kp EXCL  &kp TILDE 
-					                            &trans  &sk LSFT  		             &sk LSFT  &sl tmux_layer 
+					                            &trans  &sk LSFT  		             &sk LSFT  &sl 4 
 		>;
 		};
 
