@@ -254,7 +254,7 @@ ZMK_MACRO(t_kpane,
 
        		nums_layer {
 		bindings = <
-		&kp NUM_5   &kp NUM_6    &kp NUM_7    &kp NUM_8    &kp NUM_9		            &kp EQL   &kp LBKT &none  &none  &none
+		&kp NUM_5   &kp NUM_6    &kp NUM_7    &kp NUM_8    &kp NUM_9		            &kp EQUAL   &kp LBKT &none  &none  &none
 		&kp NUM_0   &kp NUM_1    &kp NUM_2    &kp NUM_3    &lt arrows_layer NUM_4 		&trans   &kp LGUI  &kp RBKT &none   &none 
 		&kp CMMA    &kp DOT 	&sk LGUI      &none           &none  	                &kp MINUS &kp RBKT &none  &none   &none  
 					                            &trans  &sl syms_layer                &trans &trans 
@@ -264,7 +264,7 @@ ZMK_MACRO(t_kpane,
         syms_layer {
 		bindings = <                                                                                                     
 		&ls LSHIFT   &kp AT    &kp LBRC    &kp RBRC    &kp SEMICOLON		            &kp GRAVE              &kp CARET &none &kp HASH &none 
-		&kp LBKT   &kp RBKT    &kp LPRN    &kp RPRN    &mo arrows_layer 		&lt nums_layer EQL   &kp MINUS  &kp PLUS &kp FSLH  &kp PERCENT
+		&kp LBKT   &kp RBKT    &kp LPRN    &kp RPRN    &mo arrows_layer 		&lt nums_layer EQUAL   &kp MINUS  &kp PLUS &kp FSLH  &kp PERCENT
 		&none    &none 	&os LGUI  &kp NON_US_HASH  &kp PIPE 	                &kp AMPS            &kp UNDER &kp DLLR &kp EXCL  &kp TILDE 
 					                            &trans  &sk LSFT  		             &sk LSFT  &sl tmux_layer 
 		>;
@@ -300,8 +300,8 @@ ZMK_MACRO(t_kpane,
 		bindings = <
         &kp LC(LS(LA(Q)))    &kp LC(LS(LA(W)))    &kp LC(LS(LA(F)))    &kp LC(LS(LA(P)))    &kp LC(LS(LA(B)))            &kp LC(LS(LA(J)))    &kp LC(LS(LA(L)))   &kp LC(LS(LA(U)))        &kp LC(LS(LA(Y))) &kp LC(LS(LA(QUOT)))
         &kp LC(LS(LA(A)))    &kp LC(LS(LA(R)))    &kp LC(LS(LA(S)))    &kp LC(LS(LA(T)))    &kp LC(LS(LA(G)))            &kp LC(LS(LA(M)))    &kp LC(LS(LA(N)))   &kp LC(LS(LA(E)))       &kp LC(LS(LA(I)))   &kp LC(LS(LA(O)))
-        &kp LC(LS(LA(Z)))    &kp LC(LS(LA(X)))    &kp LC(LS(LA(C)))    &kp LC(LS(LA(D)))    &kp LC(LS(LA(V)))            &kp LC(LS(LA(K)))    &kp LC(LS(LA(H)))   &kp LC(LS(LA(COMMA)))      &kp LC(LS(LA(DOT))) &kp LC(LS(LA(SLSH)))
-                        &kp LC(LS(LA(EQL))) &kp LC(LS(LA(AMPS)))                                                                 &kp LC(LS(LA(SPACE))) &kp LC(LS(LA(EXCL))) 
+        &kp LC(LS(LA(Z)))    &kp LC(LS(LA(X)))    &kp LC(LS(LA(C)))    &kp LC(LS(LA(D)))    &kp LC(LS(LA(V)))            &kp LC(LS(LA(K)))    &kp LC(LS(LA(H)))   &kp LC(LS(LA(COMMA)))      &kp LC(LS(LA(DOT))) &kp LC(LS(LA(SLASH)))
+                        &kp LC(LS(LA(EQUAL))) &kp LC(LS(LA(AMPS)))                                                                 &kp LC(LS(LA(SPACE))) &kp LC(LS(LA(EXCL))) 
 		>;
 		}; 
 	};
