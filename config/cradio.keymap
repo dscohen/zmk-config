@@ -117,7 +117,7 @@ ZMK_MACRO(t_hsplit,
 ZMK_MACRO(t_vsplit,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp RC(B) &kp PIPE2 >;
+        bindings = <&kp RC(B) &kp PIPE >;
     )
 
 ZMK_MACRO(t_kwin,
@@ -245,46 +245,46 @@ ZMK_MACRO(t_kpane,
                 
        		default_layer {
 		bindings = <
-		&kp Q &kp W &kp F &kp P &kp B                           &kp J            &kp L  &kp U    &kp Y   &kp QUOT
-		&kp A &kp R &kp S &kp T &lt 3 G 		   	    &lt 1 M &kp N &kp E &kp I &kp O    
-		&mt LSFT Z &kp X &kp C &kp D &kp V				        &kp K            &kp H  &kp COMMA &kp DOT &mt LSFT RET
+		&kp Q       &kp W &kp F   &kp P &kp B                           &kp J           &kp L  &kp U        &kp Y   &kp QUOT
+		&kp A       &kp R &kp S   &kp T &lt 3 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &kp O    
+		&mt LSFT Z  &kp X &kp C   &kp D &kp V				            &kp K           &kp H  &kp COMMA    &kp DOT &mt LSFT RET
           				&key_repeat &sl 2  	        			&kp SPC &mo 5 
 		>;
 		};
 
        		nums_layer {
 		bindings = <
-		&kp NUM_5   &kp NUM_6    &kp NUM_7    &kp NUM_8    &kp NUM_9		            &kp EQUAL   &kp LBKT &none  &none  &none
-		&kp NUM_0   &kp NUM_1    &kp NUM_2    &kp NUM_3    &lt 3 NUM_4 		&trans   &kp LGUI  &kp RBKT &none   &none 
-		&kp CMMA    &kp DOT 	&sk LGUI      &none           &none  	                &kp MINUS &kp RBKT &none  &none   &none  
-					                            &trans  &trans                 &trans &trans 
+		&kp NUM_5   &kp NUM_6    &kp NUM_7  &kp NUM_8   &kp NUM_9		        &kp EQUAL   &kp LBKT &none      &none   &none
+		&kp NUM_0   &kp NUM_1    &kp NUM_2  &kp NUM_3   &lt 3 NUM_4 		    &trans      &kp LGUI &kp RBKT   &none   &none 
+		&kp C0MMA   &kp DOT 	 &sk LGUI   &none       &none  	                &kp MINUS   &kp RBKT &none      &none   &none  
+					                        &trans      &trans                 &trans &trans 
 		>;
 		};
 
         syms_layer {
 		bindings = <                                                                                                     
-		&sk LSHIFT   &kp AT    &kp LBRC    &kp RBRC    &kp SEMICOLON		            &kp GRAVE              &kp CARET &none &kp HASH &none 
-		&kp LBKT   &kp RBKT    &kp LPRN    &kp RPRN    &mo 3 		&lt 1 EQUAL   &kp MINUS  &kp PLUS &kp FSLH  &kp PERCENT
-		&none    &none 	&sk LGUI  &kp NON_US_HASH  &kp PIPE 	                &kp AMPS            &kp UNDER &kp DLLR &kp EXCL  &kp TILDE 
-					                            &trans  &sk LSFT  		             &sk LSFT  &sl 4 
+		&sk LSHIFT  &kp AT      &kp LBRC    &kp RBRC    &kp SEMICOLON		        &kp GRAVE     &kp CARET &none       &kp HASH  &none 
+		&kp LBKT    &kp RBKT    &kp LPRN    &kp RPRN    &mo 3 		                &lt 1 EQUAL   &kp MINUS &kp PLUS    &kp FSLH  &kp PERCENT
+		&none       &none 	    &sk LGUI    &kp HASH    &kp PIPE 	                &kp AMPS      &kp UNDER &kp DLLR    &kp EXCL  &kp TILDE 
+					                        &trans      &sk LSFT  		            &sk LSFT      &sl 4 
 		>;
 		};
 
 		arrows_layer {
 		bindings = <
-		&none  &none &none &none &none    			&kp LG(LEFT) &kp LA(LEFT)  &kp LALT(RIGHT)  &kp LG(RIGHT)   &kp LG(UP) 
-		&none  &none &none &none  &trans 			&kp LEFT &kp DOWN  &kp UP  &kp RIGHT   &trans 
-		&none  &none &none &none &none              &kp BSLH  &trans &trans &trans &trans  &kp LG(DOWN)
-					            &trans &trans   &kp SPC  &trans 
+		&none       &none       &none       &none       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LALT(RIGHT)  &kp LG(RIGHT) &kp LG(UP) 
+		&none       &none       &none       &none       &trans 			        &kp LEFT        &kp DOWN      &kp UP           &kp RIGHT     &trans 
+		&none       &none       &none       &none       &none                   &kp BSLH        &trans        &trans           &trans        &kp LG(DOWN)
+					                        &trans      &trans                  &kp SPC  &trans 
 		>;
 		};	
 
         tmux_layer {
 		bindings = <
-		&t_5        &t_6 &t_7  &t_8  &t_9    			&kp RC(B) &none &none   &none    &t_scroll  
-		&t_0     &t_1  &t_2  &t_3  &t_4 			&t_LEFT &t_DOWN &t_UP &t_RIGHT    &none 
-		&t_hsplit  &none &none &none &t_vsplit     			&t_kpane &t_new &t_name &none  &none 
-					            &trans &trans 			                    &trans  &trans 
+		&t_5        &t_6         &t_7    &t_8    &t_9    			&kp RC(B) &none &none   &none    &t_scroll  
+		&t_0        &t_1    &t_2    &t_3    &t_4 			&t_LEFT &t_DOWN &t_UP &t_RIGHT    &none 
+		&t_hsplit   &none   &none   &none   &t_vsplit     			&t_kpane &t_new &t_name &none  &none 
+					                &trans  &trans 			                    &trans  &trans 
 		>;
 		};	
 		
