@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 The ZMK Contributors
+ * CopyRIGHT (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
  */
@@ -78,28 +78,28 @@ ZMK_MACRO(t_9,
         bindings = <&kp RC(B) &kp NUM_9 >;
     )
 
-ZMK_MACRO(t_left,
+ZMK_MACRO(t_LEFT,
         wait-ms = <30>;
         tap-ms = <40>;
         bindings = <&kp RC(B) &kp LEFT >;
     )
 
-ZMK_MACRO(t_right,
+ZMK_MACRO(t_RIGHT,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp RC(B) &kp right >;
+        bindings = <&kp RC(B) &kp RIGHT >;
     )
 
-ZMK_MACRO(t_up,
+ZMK_MACRO(t_UP,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp RC(B) &kp up >;
+        bindings = <&kp RC(B) &kp UP >;
     )
 
-ZMK_MACRO(t_down,
+ZMK_MACRO(t_DOWN,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp RC(B) &kp down >;
+        bindings = <&kp RC(B) &kp DOWN >;
     )
 
 ZMK_MACRO(t_scroll,
@@ -282,7 +282,7 @@ ZMK_MACRO(t_kpane,
         tmux_layer {
 		bindings = <
 		&t_5        &t_6 &t_7  &t_8  &t_9    			&kp RC(B) &none &none   &none    &t_scroll  
-		&t_0     &t_1  &t_2  &t_3  &t_4 			&t_left &t_down &t_up &t_right    &none 
+		&t_0     &t_1  &t_2  &t_3  &t_4 			&t_LEFT &t_DOWN &t_UP &t_RIGHT    &none 
 		&t_hsplit  &none &none &none &t_vsplit     			&t_kpane &t_new &t_name &none  &none 
 					            &trans &trans 			                    &trans  &trans 
 		>;
