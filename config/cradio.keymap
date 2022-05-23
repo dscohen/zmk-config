@@ -250,7 +250,7 @@ ZMK_MACRO(t_kpane,
       label = "REPEAT_MOD";
       #binding-cells = <2>;
       flavor = "balanced";
-      tapping-term-ms = <120>;
+      tapping-term-ms = <220>;
       bindings = <&kp>, <&key_repeat>;
     };
     };
