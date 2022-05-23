@@ -253,7 +253,7 @@ ZMK_MACRO(t_kpane,
       tapping-term-ms = <120>;
       bindings = <&kp>, <&key_repeat>;
     };
-    }
+    };
 
         keymap {
                 compatible = "zmk,keymap";
