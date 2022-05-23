@@ -278,7 +278,7 @@ ZMK_MACRO(t_kpane,
 
         syms_layer {
 		bindings = <                                                                                                     
-		&sk LSHIFT  &kp AT      &kp LBRC    &kp RBRC    &kp SEMICOLON		        &kp GRAVE     &kp CARET &none       &kp HASH  &none 
+		&sk LSHIFT  &kp AT      &kp LBRC    &kp RBRC    &kp SEMICOLON		        &kp GRAVE     &kp CARET &kp HASH    &kp QMARK  &none 
 		&kp LBKT    &kp RBKT    &kp LPRN    &kp RPRN    &mo 3 		                &lt 1 EQUAL   &kp MINUS &kp PLUS    &kp FSLH  &kp PERCENT
 		&none       &none 	    &sk LGUI    &kp HASH    &kp PIPE 	                &kp AMPS      &kp UNDER &kp DLLR    &kp EXCL  &kp TILDE 
 					                        &trans      &sk LSFT  		            &caps_word      &sl 4 
