@@ -220,7 +220,7 @@ ZMK_MACRO(t_kpane,
             bindings = <&sl 6>;
         };
            combo_copy {
-            timeout-ms = <80>;
+            timeout-ms = <120>;
             key-positions = <21 23>;
             bindings = <&kp LG(C)>;
         };
@@ -230,14 +230,14 @@ ZMK_MACRO(t_kpane,
             bindings = <&kp LA(SPACE)>;
         };
            combo_paste {
-            timeout-ms = <80>;
+            timeout-ms = <120>;
             key-positions = <21 22 23>;
             bindings = <&kp LG(V)>;
         };
-            combo_none {
+            combo_caps_word {
             timeout-ms = <120>;
             key-positions = <11 12 13>;
-            bindings = <&kp LG(V)>;
+            bindings = <&caps_word>;
         };
         
 
