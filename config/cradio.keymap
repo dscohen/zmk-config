@@ -244,6 +244,17 @@ ZMK_MACRO(t_kpane,
         
     };
 
+    behaviors {
+        shft_rpt: repeat_mod {
+      compatible = "zmk,behavior-hold-tap";
+      label = "REPEAT_MOD";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <120>;
+      bindings = <&kp>, <&key_repeat>;
+    };
+    }
+
         keymap {
                 compatible = "zmk,keymap";
                 
@@ -252,7 +263,7 @@ ZMK_MACRO(t_kpane,
 		&kp Q       &kp W &kp F   &kp P &kp B                           &kp J           &kp L  &kp U        &kp Y   &kp QUOT
 		&kp A       &kp R &kp S   &kp T &lt 3 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &kp O    
 		&mt LSFT Z  &kp X &kp C   &kp D &kp V				            &kp K           &kp H  &kp COMMA    &kp DOT &mt LSFT RET
-          				&mt LSFT &key_repeat &sl 2  	        			&kp SPC &mo 5 
+          				&shft_rpt LSHIFT 0 &sl 2  	        			&kp SPC &mo 5 
 		>;
 		};
 
@@ -276,7 +287,7 @@ ZMK_MACRO(t_kpane,
 
 		arrows_layer {
 		bindings = <
-		&bootloader &reset       &none       &none       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LA(RIGHT)  &kp X &kp LG(UP) 
+		&bootloader &reset       &none       &none       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LA(RIGHT)    &kp LG(RIGHT) &kp LG(UP) 
 		&none       &none       &none       &none       &trans 			        &kp LEFT        &kp DOWN      &kp UP           &kp RIGHT     &trans 
 		&none       &none       &none       &none       &none                   &kp BSLH        &trans        &trans           &trans        &kp LG(DOWN)
 					                        &trans      &trans                  &kp SPC  &trans 
