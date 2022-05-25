@@ -250,8 +250,8 @@ ZMK_MACRO(t_kpane,
       label = "REPEAT_MOD";
       #binding-cells = <2>;
       flavor = "balanced";
-      tapping-term-ms = <220>;
-      bindings = <&kp>, <&key_repeat>;
+      tapping-term-ms = <270>;
+      bindings = <&sk>, <&key_repeat>;
     };
     };
 
@@ -262,8 +262,8 @@ ZMK_MACRO(t_kpane,
 		bindings = <
 		&kp Q       &kp W &kp F   &kp P &kp B                           &kp J           &kp L  &kp U        &kp Y   &kp QUOT
 		&kp A       &kp R &kp S   &kp T &lt 3 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &kp O    
-		&mt LSFT Z  &kp X &kp C   &kp D &kp V				            &kp K           &kp H  &kp COMMA    &kp DOT &mt LSFT RET
-          				&shft_rpt LSHIFT 0 &sl 2  	        			&kp SPC &mo 5 
+		&mt Z       &kp X &kp C   &kp D &kp V				            &kp K           &kp H  &kp COMMA    &kp DOT &mt LSFT RET
+          				&shft_rpt LSHIFT 0 &sl 2  	        			&kp SPC &lt 5 LSHIFT 
 		>;
 		};
 
