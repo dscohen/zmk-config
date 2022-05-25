@@ -253,6 +253,7 @@ ZMK_MACRO(t_kpane,
       tapping-term-ms = <270>;
       bindings = <&sk>, <&key_repeat>;
     };
+    
     };
 
         keymap {
