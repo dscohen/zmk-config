@@ -154,6 +154,7 @@ ZMK_MACRO(skshft,
     tapping_term_ms = <200>;
 };
 
+
 / { 
 
     combos {
@@ -258,6 +259,15 @@ ZMK_MACRO(skshft,
       tapping-term-ms = <270>;
       bindings = <&sk>, <&key_repeat>;
     };
+    skq: sticky_key_quick_release {
+        compatible = "zmk,behavior-sticky-key";
+        label = "STICKY_KEY_QUICK_RELEASE";
+        #binding-cells = <1>;
+        bindings = <&kp>;
+        release-after-ms = <1000>;
+        quick-release;
+      };
+    };
     };
 
         keymap {
@@ -268,7 +278,7 @@ ZMK_MACRO(skshft,
 		&kp Q       &kp W &kp F   &kp P &kp B                           &kp J           &kp L  &kp U        &kp Y   &kp QUOT
 		&kp A       &kp R &kp S   &kp T &lt 3 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &kp O    
 		&kp Z       &kp X &kp C   &kp D &kp V				            &kp K           &kp H  &kp COMMA    &kp DOT &mt LSFT RET
-          				&sk LSFT  &sl 2  	        			&kp SPC &lt 5 &skshft 
+          				&skq LSFT  &sl 2  	        			&kp SPC &lt 5 &skshft 
 		>;
 		};
 
