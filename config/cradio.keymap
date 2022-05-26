@@ -266,8 +266,7 @@ ZMK_MACRO(skshft,
         bindings = <&kp>;
         release-after-ms = <1000>;
         quick-release;
-      };
-    };
+        };
     };
 
         keymap {
