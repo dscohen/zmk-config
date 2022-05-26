@@ -145,8 +145,8 @@ ZMK_MACRO(t_kpane,
 };
 };
 &mt {
-  //  flavor = "tap-preferred";
-   // tapping_term_ms = <200>;
+    flavor = "tap-preferred";
+    tapping_term_ms = <200>;
 };
 
 / { 
