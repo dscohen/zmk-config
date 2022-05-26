@@ -142,6 +142,11 @@ ZMK_MACRO(t_kpane,
         tap-ms = <40>;
         bindings = <&kp RC(B) &kp X >;
     )
+ZMK_MACRO(skshft,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&sk LSFT >;
+    )
 };
 };
 &mt {
@@ -262,8 +267,8 @@ ZMK_MACRO(t_kpane,
 		bindings = <
 		&kp Q       &kp W &kp F   &kp P &kp B                           &kp J           &kp L  &kp U        &kp Y   &kp QUOT
 		&kp A       &kp R &kp S   &kp T &lt 3 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &kp O    
-		&kp Z       &kp X &kp C   &mt LSHIFT D &kp V				    &kp K           &mt LSHIFT H  &kp COMMA    &kp DOT &mt LSFT RET
-          				&shft_rpt LSHIFT 0 &sl 2  	        			&kp SPC &lt 5 LSHIFT 
+		&kp Z       &kp X &kp C   &kp D &kp V				            &kp K           &kb H  &kp COMMA    &kp DOT &mt LSFT RET
+          				&sk LSFT 0 &sl 2  	        			&kp SPC &lt 5 &skshft 
 		>;
 		};
 
