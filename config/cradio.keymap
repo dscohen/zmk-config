@@ -277,7 +277,7 @@ ZMK_MACRO(skshft,
 		&kp Q       &kp W &kp F   &kp P &kp B                           &kp J           &kp L  &kp U        &kp Y   &kp QUOT
 		&kp A       &kp R &kp S   &kp T &lt 3 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &kp O    
 		&kp Z       &kp X &kp C   &kp D &kp V				            &kp K           &kp H  &kp COMMA    &kp DOT &mt LSFT RET
-          				&skq LSFT  &sl 2  	        			&kp SPC &lt 5 &skshft 
+          				&sl 2 &skq LSFT   	        			&lt 5 &skshft &kp SPC 
 		>;
 		};
 
