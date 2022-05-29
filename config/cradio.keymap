@@ -197,12 +197,12 @@ ZMK_MACRO(skshft,
             bindings = <&key_repeat>;
         };
          combo_sk_lgui {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <2 12>;
             bindings = <&sk LGUI>;
         };
          combo_sk_rgui {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <7 17>;
             bindings = <&sk RGUI>;
         };
@@ -214,7 +214,7 @@ ZMK_MACRO(skshft,
         };
         
             combo_colon {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <17 27>;
             bindings = <&kp COLN>;
         };
@@ -293,7 +293,7 @@ ZMK_MACRO(skshft,
         syms_layer {
 		bindings = <                                                                                                     
 		&sk LSHIFT  &kp AT      &kp LBRC    &kp RBRC    &kp SEMICOLON		        &kp GRAVE     &kp CARET &kp HASH    &kp QMARK  &kp PERCENT 
-		&kp LBKT    &kp RBKT    &kp LPRN    &kp RPRN    &mo 3 		                &lt 1 EQUAL   &kp MINUS &kp PLUS    &kp FSLH   &kp ASTERISK
+		&kp LBKT    &kp RBKT    &kp LPRN    &kp RPRN    &mo 3 		                &lt 1 EQUAL   &kp PLUS &kp MINUS    &kp FSLH   &kp ASTERISK
 		&none       &none 	    &sk LGUI    &kp HASH    &kp PIPE 	                &kp AMPS      &kp UNDER &kp DLLR    &kp EXCL   &kp TILDE 
 					                        &trans      &sk LSFT  		            &trans      &sl 4 
 		>;
