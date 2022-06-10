@@ -142,12 +142,18 @@ ZMK_MACRO(t_kpane,
         tap-ms = <40>;
         bindings = <&kp RC(A) &kp X >;
     )
+ZMK_MACRO(skshft,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&sk LSHIFT >;
+    )
 };
 };
 &mt {
-  //  flavor = "tap-preferred";
-   // tapping_term_ms = <200>;
+    flavor = "tap-preferred";
+    tapping_term_ms = <200>;
 };
+
 
 / { 
 
@@ -191,12 +197,12 @@ ZMK_MACRO(t_kpane,
             bindings = <&key_repeat>;
         };
          combo_sk_lgui {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <2 12>;
             bindings = <&sk LGUI>;
         };
          combo_sk_rgui {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <7 17>;
             bindings = <&sk RGUI>;
         };
@@ -208,7 +214,7 @@ ZMK_MACRO(t_kpane,
         };
         
             combo_colon {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <17 27>;
             bindings = <&kp COLN>;
         };
@@ -249,10 +255,18 @@ ZMK_MACRO(t_kpane,
       compatible = "zmk,behavior-hold-tap";
       label = "REPEAT_MOD";
       #binding-cells = <2>;
-      flavor = "balanced";
+      flavor = "hold-preferred";
       tapping-term-ms = <270>;
       bindings = <&sk>, <&key_repeat>;
     };
+    skq: sticky_key_quick_release {
+        compatible = "zmk,behavior-sticky-key";
+        label = "STICKY_KEY_QUICK_RELEASE";
+        #binding-cells = <1>;
+        bindings = <&kp>;
+        release-after-ms = <1000>;
+        quick-release;
+        };
     };
 
         keymap {
@@ -263,7 +277,7 @@ ZMK_MACRO(t_kpane,
 		&kp Q       &kp W &kp F   &kp P &kp B                           &kp J           &kp L  &kp U        &kp Y   &kp QUOT
 		&kp A       &kp R &kp S   &kp T &lt 3 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &kp O    
 		&kp Z       &kp X &kp C   &kp D &kp V				            &kp K           &kp H  &kp COMMA    &kp DOT &mt LSFT RET
-          				&shft_rpt LSHIFT 0 &sl 2  	        			&kp SPC &lt 5 LSHIFT 
+          				&skq LSFT  &sl 2  	        			&kp SPC &lt 5 SPACE
 		>;
 		};
 
@@ -279,16 +293,16 @@ ZMK_MACRO(t_kpane,
         syms_layer {
 		bindings = <                                                                                                     
 		&sk LSHIFT  &kp AT      &kp LBRC    &kp RBRC    &kp SEMICOLON		        &kp GRAVE     &kp CARET &kp HASH    &kp QMARK  &kp PERCENT 
-		&kp LBKT    &kp RBKT    &kp LPRN    &kp RPRN    &mo 3 		                &lt 1 EQUAL   &kp MINUS &kp PLUS    &kp FSLH   &kp ASTERISK
+		&kp LBKT    &kp RBKT    &kp LPRN    &kp RPRN    &mo 3 		                &lt 1 EQUAL   &kp PLUS &kp MINUS    &kp FSLH   &kp ASTERISK
 		&none       &none 	    &sk LGUI    &kp HASH    &kp PIPE 	                &kp AMPS      &kp UNDER &kp DLLR    &kp EXCL   &kp TILDE 
-					                        &trans      &sk LSFT  		            &caps_word      &sl 4 
+					                        &trans      &sk LSFT  		            &trans      &sl 4 
 		>;
 		};
 
 		arrows_layer {
 		bindings = <
 		&bootloader &reset       &none       &none       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LA(RIGHT)    &kp LG(RIGHT) &kp LG(UP) 
-		&none       &none       &none       &none       &trans 			        &kp LEFT        &kp DOWN      &kp UP           &kp RIGHT     &trans 
+		&none       &none       &none       &kp LSHIFT   &trans 			        &kp LEFT        &kp DOWN      &kp UP           &kp RIGHT     &trans 
 		&none       &none       &none       &none       &none                   &kp BSLH        &trans        &trans           &trans        &kp LG(DOWN)
 					                        &trans      &trans                  &kp SPC  &trans 
 		>;
