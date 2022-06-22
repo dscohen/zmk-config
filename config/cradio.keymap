@@ -282,7 +282,6 @@ ZMK_MACRO(skshft,
             bindings = <&kp M>;
             layers = <3>;
         };
-        
             artsey_y {
             timeout-ms = <120>;
             key-positions = <30 31>;
