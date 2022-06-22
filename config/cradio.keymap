@@ -399,7 +399,7 @@ ZMK_MACRO(skshft,
             artsey_g {
             timeout-ms = <120>;
             key-positions = <11 12>;
-            bindings = <&kp G>;
+            bindings = <&kp BACKSPACE>;
             layers = <3>;
         };
             artsey_h {
@@ -471,7 +471,8 @@ ZMK_MACRO(skshft,
             artsey_bs {
             timeout-ms = <120>;
             key-positions = <12 23>;
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp G>;
+
             layers = <3>;
         };
 
@@ -540,7 +541,7 @@ ZMK_MACRO(skshft,
 
 		arrows_layer {
 		bindings = <
-		&bootloader &reset       &none       &none       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LA(RIGHT)    &kp LG(RIGHT) &kp LG(UP) 
+		&bootloader &reset       &none       &kp DEL       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LA(RIGHT)    &kp LG(RIGHT) &kp LG(UP) 
 		&none       &none       &none       &kp LSHIFT   &trans 			        &kp LEFT        &kp DOWN      &kp UP           &kp RIGHT     &trans 
 		&none       &none       &none       &to 3       &none                   &kp BSLH        &trans        &trans           &trans        &kp LG(DOWN)
 					                        &trans      &trans                  &kp SPC  &trans 
