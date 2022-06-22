@@ -245,7 +245,7 @@ ZMK_MACRO(skshft,
            combo_meh_layer {
             timeout-ms = <50>;
             key-positions = <3 13>;
-            bindings = <&sl 6>;
+            bindings = <&sl 7>;
             layers = <0 1 2>;
         };
            combo_copy {
@@ -506,16 +506,16 @@ ZMK_MACRO(skshft,
        		default_layer {
 		bindings = <
 		&kp Q       &kp W &kp F   &kp P &kp B                           &kp J           &kp L  &kp U        &kp Y   &kp QUOT
-		&kp A       &kp R &kp S   &kp T &lt 3 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &kp O    
+		&kp A       &kp R &kp S   &kp T &lt 4 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &kp O    
 		&kp Z       &kp X &kp C   &kp D &kp V				            &kp K           &kp H  &kp COMMA    &kp DOT &mt LSFT RET
-          				&skq LSFT  &sl 2  	        			&kp SPC &lt 5 SPACE
+          				&skq LSFT  &sl 2  	        			&kp SPC &lt 6 SPACE
 		>;
 		};
 
        		nums_layer {
 		bindings = <
 		&kp NUM_5   &kp NUM_6    &kp NUM_7  &kp NUM_8   &kp NUM_9		        &kp EQUAL   &kp LBKT &none      &reset   &bootloader
-		&kp NUM_0   &kp NUM_1    &kp NUM_2  &kp NUM_3   &lt 3 NUM_4 		    &trans      &kp LGUI &kp RBKT   &none   &none 
+		&kp NUM_0   &kp NUM_1    &kp NUM_2  &kp NUM_3   &lt 4 NUM_4 		    &trans      &kp LGUI &kp RBKT   &none   &none 
 		&kp COMMA   &kp DOT 	 &sk LGUI   &none       &none  	                &kp MINUS   &kp RBKT &none      &none   &none  
 					                        &trans      &trans                 &trans &trans 
 		>;
@@ -524,9 +524,9 @@ ZMK_MACRO(skshft,
         syms_layer {
 		bindings = <                                                                                                     
 		&sk LSHIFT  &kp AT      &kp LBRC    &kp RBRC    &kp SEMICOLON		        &kp GRAVE     &kp CARET &kp HASH    &kp QMARK  &kp PERCENT 
-		&kp LBKT    &kp RBKT    &kp LPRN    &kp RPRN    &mo 3 		                &lt 1 EQUAL   &kp PLUS &kp MINUS    &kp FSLH   &kp ASTERISK
+		&kp LBKT    &kp RBKT    &kp LPRN    &kp RPRN    &mo 4 		                &lt 1 EQUAL   &kp PLUS &kp MINUS    &kp FSLH   &kp ASTERISK
 		&none       &none 	    &sk LGUI    &kp HASH    &kp PIPE 	                &kp AMPS      &kp UNDER &kp DLLR    &kp EXCL   &kp TILDE 
-					                        &trans      &sk LSFT  		            &trans      &sl 4 
+					                        &trans      &sk LSFT  		            &trans      &sl 5 
 		>;
 		};
 
