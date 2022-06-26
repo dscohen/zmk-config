@@ -193,7 +193,6 @@ ZMK_MACRO(skshft,
         bindings = <&sk LSHIFT >;
     )
 };
-};
 &mt {
     flavor = "tap-preferred";
     tapping_term_ms = <200>;
