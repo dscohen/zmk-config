@@ -554,7 +554,7 @@ ZMK_MACRO(skshft,
 		&t_5        &t_6       &t_7         &t_8        &t_9    			    &kp RC(B)       &none       &none              &none        &t_scroll  
 		&t_0        &t_1       &t_2         &t_3        &t_4 			        &t_LEFT         &t_DOWN     &t_UP              &t_RIGHT     &none 
 		&t_hsplit   &none      &none        &none      &t_vsplit               &t_kpane        &t_new      &t_name            &none        &none 
-					                        &t_f2      &t_f1 			        &trans  &trans 
+					                        &none      &none 			        &trans  &trans 
 		>;
 		};	
 		
