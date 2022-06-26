@@ -125,6 +125,46 @@ ZMK_MACRO(t_vsplit,
         bindings = <&kp RC(A) &kp PIPE >;
     )
 
+ZMK_MACRO(t_f1,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp RC(A) &kp AMPS >;
+    )
+ZMK_MACRO(t_f2,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp RC(A) &kp AMPS >;
+ZMK_MACRO(t_f3,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp RC(A) &kp AMPS >;
+    )
+ZMK_MACRO(t_f4,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp RC(A) &kp AMPS >;
+    )
+ZMK_MACRO(t_f5,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp RC(A) &kp AMPS >;
+    )
+ZMK_MACRO(t_f6,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp RC(A) &kp AMPS >;
+    )
+ZMK_MACRO(t_f7,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp RC(A) &kp AMPS >;
+    )
+ZMK_MACRO(t_f8,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp RC(A) &kp AMPS >;
+    )
+
 ZMK_MACRO(t_kwin,
         wait-ms = <30>;
         tap-ms = <40>;
@@ -550,10 +590,10 @@ ZMK_MACRO(skshft,
 
         tmux_layer {
 		bindings = <
-		&t_5        &t_6       &t_7         &t_8        &t_9    			    &kp RC(B)       &none       &none              &none        &t_scroll  
+		&t_5        &t_6       &t_7         &t_8        &t_9    			    &kp RC(B)       &tc_f8       &tc_f7              &tc_f6        &t_scroll  
 		&t_0        &t_1       &t_2         &t_3        &t_4 			        &t_LEFT         &t_DOWN     &t_UP              &t_RIGHT     &none 
-		&t_hsplit   &none      &none        &none       &t_vsplit               &t_kpane        &t_new      &t_name            &none        &none 
-					                        &trans      &trans 			        &trans  &trans 
+		&t_hsplit   &t_f3      &t_f4        &t_f5       &t_vsplit               &t_kpane        &t_new      &t_name            &none        &none 
+					                        &t_f2      &t_f1 			        &trans  &trans 
 		>;
 		};	
 		
