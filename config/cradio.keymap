@@ -125,45 +125,6 @@ ZMK_MACRO(t_vsplit,
         bindings = <&kp RC(A) &kp PIPE >;
     )
 
-ZMK_MACRO(t_f1,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp RC(A) &kp AMPS >;
-    )
-ZMK_MACRO(t_f2,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp RC(A) &kp AMPS >;
-ZMK_MACRO(t_f3,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp RC(A) &kp AMPS >;
-    )
-ZMK_MACRO(t_f4,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp RC(A) &kp AMPS >;
-    )
-ZMK_MACRO(t_f5,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp RC(A) &kp AMPS >;
-    )
-ZMK_MACRO(t_f6,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp RC(A) &kp AMPS >;
-    )
-ZMK_MACRO(t_f7,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp RC(A) &kp AMPS >;
-    )
-ZMK_MACRO(t_f8,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp RC(A) &kp AMPS >;
-    )
 
 ZMK_MACRO(t_kwin,
         wait-ms = <30>;
@@ -192,6 +153,7 @@ ZMK_MACRO(skshft,
         tap-ms = <40>;
         bindings = <&sk LSHIFT >;
     )
+};
 };
 &mt {
     flavor = "tap-preferred";
