@@ -613,10 +613,10 @@ ZMK_MACRO(t_f9,
 
         tmux_layer {
 		bindings = <
-		&t_5        &t_6       &t_7         &t_8        &t_9    			    &kp RC(B)       &none       &none              &none        &t_scroll  
-		&t_0        &t_1       &t_2         &t_3        &t_4 			        &t_LEFT         &t_DOWN     &t_UP              &t_RIGHT     &none 
-		&t_hsplit   &none      &none        &none      &t_vsplit               &t_kpane        &t_new      &t_name            &none        &none 
-					                        &none      &none 			        &trans  &trans 
+		&t_5        &t_6       &t_7         &t_8        &t_9    			    &kp RC(B)       &t_f5       &t_f6              &t_f7        &t_scroll  
+		&t_0        &t_1       &t_2         &t_3        &t_4 			        &t_LEFT         &t_DOWN     &t_UP              &t_RIGHT     &t_f8 
+		&t_hsplit   &t_f1       &t_f2       &t_f3     &t_vsplit               &t_kpane        &t_new      &t_name            &t_f9        &none 
+					                        &t_f5      &t_f4 			        &trans  &trans 
 		>;
 		};	
 		
