@@ -606,7 +606,7 @@ ZMK_MACRO(t_f9,
 		bindings = <
 		&bootloader &reset       &none       &kp DEL       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LA(RIGHT)    &kp LG(RIGHT) &kp LG(UP) 
 		&none       &none       &none       &kp LSHIFT   &trans 			        &kp LEFT        &kp DOWN      &kp UP           &kp RIGHT     &trans 
-		&none       &none       &none       &to 3       &none                   &kp BSLH        &trans        &trans           &trans        &kp LG(DOWN)
+		&none       &none       &none       &kp LCTL       &none                   &kp BSLH        &trans        &trans           &trans        &kp LG(DOWN)
 					                        &trans      &trans                  &kp SPC  &trans 
 		>;
 		};	
