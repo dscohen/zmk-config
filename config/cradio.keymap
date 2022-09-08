@@ -303,6 +303,19 @@ ZMK_MACRO(t_f9,
             bindings = <&kp COLN>;
             layers = <0 1 2>;
         };
+            combo_alt_instant {
+            timeout-ms = <70>;
+            key-positions = <1 11>;
+            bindings = <&kp LALT>;
+            layers = <0>;
+        };
+
+            combo_ctl_instant {
+            timeout-ms = <70>;
+            key-positions = <11 21>;
+            bindings = <&kp LCTL>;
+            layers = <0>;
+        };
         
         
            combo_meh_layer {
