@@ -637,7 +637,7 @@ ZMK_MACRO(t_f9,
 		bindings = <
 		&kp LC(LS(F14)) &kp LC(LS(F15)) &kp LC(LS(F16)) &kp LC(LS(F17)) &kp LC(LS(F18)) 		    &bt BT_SEL 0    &bt BT_SEL 1 &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_CLR
 		&kp LC(LS(NUM_0)) &kp LC(LS(NUM_6)) &kp LC(LS(NUM_7)) &kp LC(LS(NUM_8)) &kp LC(LS(NUM_9))  		    &kp LEFT        &trans      &trans             &kp RIGHT   &kp K_MUTE 
-		&kp LC(LS(NUM_1))  &kp LC(LS(NUM_2)) &kp LC(LS(NUM_3)) &kp LC(LS(NUM_4)) &kp LC(LS(NUM_5))   			&kp C_PREV  &kp C_PP  &kp C_NEXT           &kp C_VOL_UP  &kp C_VOL_DOWN   
+		&kp LC(LS(NUM_1))  &kp LC(LS(NUM_2)) &kp LC(LS(NUM_3)) &kp LC(LS(NUM_4)) &kp LC(LS(NUM_5))   			&kp C_PREV  &kp C_PP  &kp C_NEXT           &kp C_VOL_UP  &kp C_VOL_DN   
 					                        &trans      &trans  			    &trans &trans 
 		>;
 		};	
