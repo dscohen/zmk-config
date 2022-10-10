@@ -599,9 +599,9 @@ ZMK_MACRO(t_f9,
 
         syms_layer {
 		bindings = <                                                                                                     
-		&sk LSHIFT  &kp AT      &kp LBRC    &kp RBRC    &kp SEMICOLON		        &kp GRAVE     &kp CARET &kp HASH    &kp QMARK  &kp PERCENT 
+		&sk LGUI  &kp AT      &kp LBRC    &kp RBRC    &kp SEMICOLON		        &kp GRAVE     &kp CARET &kp HASH    &kp QMARK  &kp PERCENT 
 		&kp LBKT    &kp RBKT    &kp LPRN    &kp RPRN    &mo 4 		                &lt 1 EQUAL   &kp PLUS &kp MINUS    &kp FSLH   &kp ASTERISK
-		&none       &none 	    &sk LGUI    &kp HASH    &kp PIPE 	                &kp AMPS      &kp UNDER &kp DLLR    &kp EXCL   &kp TILDE 
+		&sk LSHIFT       &none 	    &kp LG(C)    &kp LG(V)    &kp PIPE 	                &kp AMPS      &kp UNDER &kp DLLR    &kp EXCL   &kp TILDE 
 					                        &trans      &sk LSFT  		            &trans      &sl 5 
 		>;
 		};
