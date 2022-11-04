@@ -181,7 +181,7 @@ ZMK_MACRO(t_f3,
 ZMK_MACRO(t_f4,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp RC(A) &kp F4 >;
+        bindings = <&kp RC(A) &sl 5 >;
     )
 
 ZMK_MACRO(t_f5,
