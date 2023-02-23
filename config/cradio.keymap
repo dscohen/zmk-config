@@ -574,6 +574,12 @@ ZMK_MACRO(t_f9,
         release-after-ms = <1000>;
         quick-release;
         };
+    tdRT: tap_dance_right_thumb {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&to 6>, <&to 0>;
     };
 
         keymap {
@@ -584,7 +590,7 @@ ZMK_MACRO(t_f9,
 		&kp Q       &kp W &kp F   &kp P &kp B                           &kp J           &kp L  &kp U        &kp Y   &kp QUOT
 		&kp A       &kp R &kp S   &kp T &lt 4 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &kp O    
 		&kp Z       &kp X &kp C   &kp D &kp V				            &kp K           &kp H  &kp COMMA    &kp DOT &mt LSFT RET
-          				&skq LSFT  &sl 2  	        			&kp SPC &lt 6 SPACE
+          				&skq LSFT  &sl 2  	        			&kp SPC &tdRT
 		>;
 		};
 
