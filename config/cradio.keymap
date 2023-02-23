@@ -579,7 +579,7 @@ ZMK_MACRO(t_f9,
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&to 6>, <&to 6>, <&to 0>;
+            bindings = <&sl 6>, <&to 6>, <&to 0>;
     };
 };
 
