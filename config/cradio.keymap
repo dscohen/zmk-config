@@ -242,7 +242,7 @@ ZMK_MACRO(t_f9,
         combo_right_space {
             timeout-ms = <20>;
             key-positions = <16 17>;
-            bindings = <&kp SPACE>;
+            bindings = <&kp RET>;
             layers = <0 1 2>;
         };
         combo_z {
@@ -606,9 +606,9 @@ ZMK_MACRO(t_f9,
                 
        		default_layer {
 		bindings = <
-		&kp Q       &kp C &kp H   &kp P &kp V                           &kp K           &kp Y  &kp O        &kp J   &kp QUOT
-		&kp R       &kp S &kp N   &kp T &lt 4 G 		   	            &lt 1 W         &kp U  &kp E        &kp A   &kp I    
-		&kp X       &kp M &kp L   &kp D &kp B				            &sl 2           &kp F  &kp COMMA    &kp DOT &mt LSFT RET
+		&kp Q       &kp C &kp H   &kp P &kp V                           &kp K           &kp Y  &kp O        &kp J   &kp FSLH
+		&kp R       &kp S &kp N   &kp T &lt 4 G 		   	            &lt 1 W         &kp U  &kp E        &kp I   &kp A    
+		&kp X       &kp M &kp L   &kp D &kp B				            &sl 2           &kp F  &kp QUOT    &kp COMMA &kp DOT
           				&skq LSFT  &sl 2  	        			&kp SPC &tdRT
 		>;
 		};
