@@ -671,7 +671,7 @@ ZMK_MACRO(t_f9,
     };
     phtr: positional_hold_tap_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "POSITIONAL_HOLD_TAP";
+            label = "POSITIONAL_HOLD_TAP_RIGHT";
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <400>;
@@ -679,9 +679,9 @@ ZMK_MACRO(t_f9,
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 >;    // <---[[the W key]]
         };
-            phtl: positional_hold_tap_left {
+    phtl: positional_hold_tap_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "POSITIONAL_HOLD_TAP";
+            label = "POSITIONAL_HOLD_TAP_LEFT";
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <400>;
@@ -697,7 +697,7 @@ ZMK_MACRO(t_f9,
        		default_layer {
 		bindings = <
 		&kp Q       &kp W &kp F   &kp P &lt 5 B                           &lt 5 J           &kp L  &kp U        &kp Y   &kp QUOT
-		&phtr LSFT A       &kp R &kp S   &kp T &lt 4 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &phtl LSFT O    
+		&phtl LSFT A       &kp R &kp S   &kp T &lt 4 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &phtr LSFT O    
 		&kp Z       &kp X &kp C   &kp D &kp V				            &kp K           &kp H  &kp COMMA    &kp DOT &mt LSFT RET
           				&sk LSFT  &kp SPC  	        			&sl 2 &tdRT
 		>;
