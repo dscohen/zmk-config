@@ -227,12 +227,6 @@ ZMK_MACRO(t_f9,
 
     combos {
         compatible = "zmk,combos";
-        combo_ff_tab {
-            timeout-ms = <50>;
-            key-positions = <13 23>;
-            bindings = <&ff_tab>;
-            layers = <0 1 2>;
-        };
         combo_esc {
             timeout-ms = <50>;
             key-positions = <27 28>;
@@ -254,7 +248,7 @@ ZMK_MACRO(t_f9,
          combo_sk_ctrl {
             timeout-ms = <50>;
             key-positions = <21 22>;
-            bindings = <&sk LCTL>;
+            bindings = <&tdLCTL>;
             layers = <0 1 2>;
         };
         
@@ -303,19 +297,9 @@ ZMK_MACRO(t_f9,
             bindings = <&kp COLN>;
             layers = <0 1 2>;
         };
-            combo_alt_instant {
-            timeout-ms = <70>;
-            key-positions = <1 11>;
-            bindings = <&kp LALT>;
-            layers = <0>;
-        };
 
-            combo_ctl_instant {
-            timeout-ms = <70>;
-            key-positions = <11 21>;
-            bindings = <&kp LCTL>;
-            layers = <0>;
-        };
+
+
         
         
            combo_meh_layer {
@@ -348,6 +332,97 @@ ZMK_MACRO(t_f9,
             bindings = <&caps_word>;
             layers = <0 1 2>;
         };
+        /*
+        * SYMBOL COMBOS
+        */
+           combo_lbrc {
+            timeout-ms = <120>;
+            key-positions = <2 3>;
+            bindings = <&kp LBRC>;
+            layers = <0 1 2>;
+        };
+                   combo_rbrc {
+            timeout-ms = <120>;
+            key-positions = <3 4>;
+            bindings = <&kp RBRC >;
+            layers = <0 1 2>;
+        };
+                   combo_rprn {
+            timeout-ms = <50>;
+            key-positions = <6 7>;
+            bindings = <&kp LPRN>;
+            layers = <0 1 2>;
+        };
+                   combo_lbrn {
+            timeout-ms = <120>;
+            key-positions = <7 8>;
+            bindings = <&kp RPRN>;
+            layers = <0 1 2>;
+        };
+                   combo_qstn {
+            timeout-ms = <120>;
+            key-positions = <1 11>;
+            bindings = <&kp QMARK>;
+            layers = <0 1 2>;
+        };
+                   combo_exclm {
+            timeout-ms = <120>;
+            key-positions = <11 21>;
+            bindings = <&kp EXCL>;
+            layers = <0 1 2>;
+        };
+                   combo_rbrk {
+            timeout-ms = <120>;
+            key-positions = <12 22>;
+            bindings = <&kp LBKT>;
+            layers = <0 1 2>;
+        };
+                   combo_lbrk {
+            timeout-ms = <120>;
+            key-positions = <13 23>;
+            bindings = <&kp RBKT>;
+            layers = <0 1 2>;
+        };
+                   combo_underscore {
+            timeout-ms = <120>;
+            key-positions = <23 24>;
+            bindings = <&kp UNDER>;
+            layers = <0 1 2>;
+        };
+                   combo_ast {
+            timeout-ms = <120>;
+            key-positions = <5 15 >;
+            bindings = <&kp ASTERISK>;
+            layers = <0 1 2>;
+        };
+                   combo_hash {
+            timeout-ms = <120>;
+            key-positions = <8 18>;
+            bindings = <&kp HASH>;
+            layers = <0 1 2>;
+        };
+                   combo_fslash {
+            timeout-ms = <120>;
+            key-positions = <16 26>;
+            bindings = <&kp FSLH>;
+            layers = <0 1 2>;
+        };
+        
+                   combo_plus {
+            timeout-ms = <120>;
+            key-positions = <25 26>;
+            bindings = <&kp PLUS>;
+            layers = <0 1 2>;
+        };
+                   combo_percent {
+            timeout-ms = <120>;
+            key-positions = <18 28>;
+            bindings = <&kp PERCENT>;
+            layers = <0 1 2>;
+        };
+          
+ 
+
         /*
         * ARTSEY COMBOS
         */
@@ -581,6 +656,13 @@ ZMK_MACRO(t_f9,
             tapping-term-ms = <200>;
             bindings = <&sl 6>, <&to 6>, <&to 0>;
     };
+    tdLCTL: tap_dance_lctl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_LCTL";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&sk LCTL>, <&sl 5>;
+    };
 };
 
         keymap {
@@ -591,7 +673,7 @@ ZMK_MACRO(t_f9,
 		&kp Q       &kp W &kp F   &kp P &kp B                           &kp J           &kp L  &kp U        &kp Y   &kp QUOT
 		&kp A       &kp R &kp S   &kp T &lt 4 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &kp O    
 		&kp Z       &kp X &kp C   &kp D &kp V				            &kp K           &kp H  &kp COMMA    &kp DOT &mt LSFT RET
-          				&skq LSFT  &sl 2  	        			&kp SPC &tdRT
+          				&sk LSFT  &kp SPC  	        			&sl 2 &tdRT
 		>;
 		};
 
@@ -636,7 +718,7 @@ ZMK_MACRO(t_f9,
 		&t_5        &t_6       &t_7         &t_8        &t_9    			    &kp RC(B)       &t_f5       &t_f6              &t_f7        &t_scroll  
 		&t_0        &t_1       &t_2         &t_3        &t_4 			        &t_LEFT         &t_DOWN     &t_UP              &t_RIGHT     &t_f8 
 		&t_hsplit   &t_f1       &t_f2       &t_f3     &t_vsplit               &t_kpane        &t_new      &t_name            &t_f9        &none 
-					                        &t_f5      &t_f4 			        &trans  &trans 
+					                        &trans      &t_f4 			        &trans  &trans 
 		>;
 		};	
 		
