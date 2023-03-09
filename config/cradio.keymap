@@ -426,6 +426,38 @@ ZMK_MACRO(t_f9,
             bindings = <&kp PERCENT>;
             layers = <0 1 2>;
         };
+                   combo_semicolon {
+            timeout-ms = <120>;
+            key-positions = <4 14>;
+            bindings = <&kp SEMICOLO >;
+            layers = <0 1 2>;
+        };
+          
+                   combo_tilda {
+            timeout-ms = <120>;
+            key-positions = <14 24>;
+            bindings = <&kp TILDE>;
+            layers = <0 1 2>;
+        };
+                   combo_dollar {
+            timeout-ms = <120>;
+            key-positions = <15 25>;
+            bindings = <&kp DLLR>;
+            layers = <0 1 2>;
+        };
+
+        /*
+        * LAYER COMBOS
+        */
+
+                   combo_tmux {
+            timeout-ms = <170>;
+            key-positions = <1 2 3>;
+            bindings = <&sl 5>;
+            layers = <0 1 2>;
+        };
+
+          
           
  
 
