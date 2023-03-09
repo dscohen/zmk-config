@@ -691,13 +691,14 @@ ZMK_MACRO(t_f9,
         };
 };
 
+
         keymap {
                 compatible = "zmk,keymap";
                 
        		default_layer {
 		bindings = <
-		&kp Q       &kp W &kp F   &kp P &lt 5 B                           &lt 5 J           &kp L  &kp U        &kp Y   &kp QUOT
-		&phtl LSFT A       &kp R &kp S   &kp T &lt 4 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &phtr LSFT O    
+		&phtl LSFT Q       &kp W &kp F   &kp P &lt 5 B                           &lt 5 J           &kp L  &kp U        &kp Y   &phtr LSFT QUOT
+		&kp A       &kp R &kp S   &kp T &lt 4 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &kp O    
 		&kp Z       &kp X &kp C   &kp D &kp V				            &kp K           &kp H  &kp COMMA    &kp DOT &mt LSFT RET
           				&sk LSFT  &kp SPC  	        			&sl 2 &tdRT
 		>;
