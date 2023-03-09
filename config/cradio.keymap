@@ -429,7 +429,7 @@ ZMK_MACRO(t_f9,
                    combo_semicolon {
             timeout-ms = <120>;
             key-positions = <4 14>;
-            bindings = <&kp SEMICOLO >;
+            bindings = <&kp SEMICOLON >;
             layers = <0 1 2>;
         };
           
