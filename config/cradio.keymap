@@ -439,6 +439,12 @@ ZMK_MACRO(t_f9,
             bindings = <&kp TILDE>;
             layers = <0 1 2>;
         };
+                   combo_dash {
+            timeout-ms = <120>;
+            key-positions = <16 17 18>;
+            bindings = <&kp MINUS>;
+            layers = <0 1 2>;
+        };
                    combo_dollar {
             timeout-ms = <120>;
             key-positions = <15 25>;
