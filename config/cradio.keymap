@@ -462,6 +462,12 @@ ZMK_MACRO(t_f9,
             bindings = <&sl 5>;
             layers = <0 1 2>;
         };
+                         combo_artsey {
+            timeout-ms = <170>;
+            key-positions = <6 7 8 9>;
+            bindings = <&tg 3>;
+            layers = <0 1 2 3>;
+        };
 
           
           
@@ -471,18 +477,47 @@ ZMK_MACRO(t_f9,
         * ARTSEY COMBOS
         */
         
-            artsey_m {
+        /* 
+        * put where h is
+        */
+            artsey_s { 
             timeout-ms = <120>;
-            key-positions = <20 21 22>;
-            bindings = <&kp M>;
+            key-positions = <26 28>;
+            bindings = <&kp S>;
             layers = <3>;
         };
-            artsey_y {
+
+
+        /* 
+        * put where ly is
+        */
+            artsey_a { 
             timeout-ms = <120>;
-            key-positions = <20 21>;
-            bindings = <&kp Y>;
+            key-positions = <6 8>;
+            bindings = <&kp A>;
             layers = <3>;
         };
+        /* 
+        * put where jl is
+        */
+            artsey_t { 
+            timeout-ms = <120>;
+            key-positions = <5 6>;
+            bindings = <&kp T>;
+            layers = <3>;
+        };
+
+        /* 
+        * put where . is
+        */
+            artsey_r { 
+            timeout-ms = <120>;
+            key-positions = <16 2>;
+            bindings = <&kp R>;
+            layers = <3>;
+        };
+
+
             artsey_p {
             timeout-ms = <120>;
             key-positions = <20 21 23>;
@@ -491,181 +526,84 @@ ZMK_MACRO(t_f9,
         };
             artsey_q {
             timeout-ms = <120>;
-            key-positions = <10 11 13>;
+            key-positions = <16 18 19>;
             bindings = <&kp Q>;
             layers = <3>;
         };
-            artsey_u {
-            timeout-ms = <120>;
-            key-positions = <21 22>;
-            bindings = <&kp U>;
-            layers = <3>;
-        };
+
             artsey_v {
             timeout-ms = <120>;
-            key-positions = <10 12>;
+            key-positions = <17 19>;
             bindings = <&kp V>;
             layers = <3>;
         };
             artsey_w {
             timeout-ms = <120>;
-            key-positions = <10 13>;
+            key-positions = <16 19>;
             bindings = <&kp W>;
             layers = <3>;
         };
             artsey_x {
             timeout-ms = <120>;
-            key-positions = <10 11 12>;
+            key-positions = <17 18 19>;
             bindings = <&kp X>;
             layers = <3>;
         };
             artsey_z {
             timeout-ms = <120>;
-            key-positions = <10 11 12 13>;
+            key-positions = <16 17 18 19>;
             bindings = <&kp Z>;
-            layers = <3>;
-        };
-            artsey_esc {
-            timeout-ms = <120>;
-            key-positions = <20 12 23>;
-            bindings = <&kp ESC>;
             layers = <3>;
         };
             artsey_tab {
             timeout-ms = <120>;
-            key-positions = <20 11 12 13>;
+            key-positions = <26 17 18 19>;
             bindings = <&kp TAB>;
             layers = <3>;
         };
-            artsey_ctrl {
-            timeout-ms = <120>;
-            key-positions = <10 23>;
-            bindings = <&kp LCTL>;
-            layers = <3>;
-        };
-            artsey_gui {
-            timeout-ms = <120>;
-            key-positions = <10 21>;
-            bindings = <&kp LGUI>;
-            layers = <3>;
-        };
-            artsey_alt {
-            timeout-ms = <120>;
-            key-positions = <10 11 12 23>;
-            bindings = <&kp LALT>;
-            layers = <3>;
-        };
-            artsey_shift {
-            timeout-ms = <120>;
-            key-positions = <10 21>;
-            bindings = <&kp LSFT>;
-            layers = <3>;
-        };
-            artsey_wordlock {
-            timeout-ms = <120>;
-            key-positions = <20 21 22 13>;
-            bindings = <&caps_word>;
-            layers = <3>;
-        };
+
             artsey_b {
             timeout-ms = <120>;
-            key-positions = <20 23>;
+            key-positions = <26 29>;
             bindings = <&kp B>;
             layers = <3>;
         };
             artsey_c {
             timeout-ms = <120>;
-            key-positions = <22 23>;
+            key-positions = <26 27>;
             bindings = <&kp C>;
             layers = <3>;
         };
             artsey_d {
             timeout-ms = <120>;
-            key-positions = <11 12 13>;
+            key-positions = <16 17 18>;
             bindings = <&kp D>;
             layers = <3>;
         };
             artsey_f {
             timeout-ms = <120>;
-            key-positions = <12 13>;
+            key-positions = <16 17>;
             bindings = <&kp F>;
             layers = <3>;
         };
             artsey_g {
             timeout-ms = <120>;
-            key-positions = <11 12>;
-            bindings = <&kp BACKSPACE>;
+            key-positions = <17 18>;
+            bindings = <&kp G>;
             layers = <3>;
         };
-            artsey_h {
-            timeout-ms = <120>;
-            key-positions = <21 23>;
-            bindings = <&kp H>;
-            layers = <3>;
-        };
-            artsey_j {
-            timeout-ms = <120>;
-            key-positions = <10 11>;
-            bindings = <&kp J>;
-            layers = <3>;
-        };
-            artsey_k {
-            timeout-ms = <120>;
-            key-positions = <20 22>;
-            bindings = <&kp K>;
-            layers = <3>;
-        };
-            artsey_l {
-            timeout-ms = <120>;
-            key-positions = <21 22 23>;
-            bindings = <&kp L>;
-            layers = <3>;
-        };
-            artsey_enter {
-            timeout-ms = <120>;
-            key-positions = <13 23>;
-            bindings = <&kp RET>;
-            layers = <3>;
-        };
-            artsey_quote {
-            timeout-ms = <120>;
-            key-positions = <13 21 22>;
-            bindings = <&kp QUOT>;
-            layers = <3>;
-        };
-            artsey_comm {
-            timeout-ms = <120>;
-            key-positions = <13 21>;
-            bindings = <&kp COMMA>;
-            layers = <3>;
-        };
-            artsey_dot {
-            timeout-ms = <120>;
-            key-positions = <13 22>;
-            bindings = <&kp DOT>;
-            layers = <3>;
-        };
-            artsey_slash {
-            timeout-ms = <120>;
-            key-positions = <13 21>;
-            bindings = <&kp SLASH>;
-            layers = <3>;
-        };
+
+
+
             artsey_bang {
             timeout-ms = <120>;
-            key-positions = <11 21>;
+            key-positions = <18 28>;
             bindings = <&kp EXCL>;
-            layers = <3>;
-        };
-            artsey_space {
-            timeout-ms = <200>;
-            key-positions = <20 21 22 23>;
-            bindings = <&kp SPACE>;
             layers = <3>;
         };
             artsey_bs {
             timeout-ms = <120>;
-            key-positions = <12 23>;
+            key-positions = <17 26>;
             bindings = <&kp G>;
 
             layers = <3>;
