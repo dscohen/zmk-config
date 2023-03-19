@@ -373,13 +373,25 @@ ZMK_MACRO(t_f9,
         };
                    combo_rbrk {
             timeout-ms = <120>;
-            key-positions = <12 22>;
+            key-positions = <12 21>;
             bindings = <&kp LBKT>;
+            layers = <0 1 2>;
+        };
+        combo_emailat {
+            timeout-ms = <120>;
+            key-positions = <15 6>;
+            bindings = <&kp AT>;
+            layers = <0 1 2>;
+        };
+        combo_carrot {
+            timeout-ms = <120>;
+            key-positions = <2 11>;
+            bindings = <&kp CARET>;
             layers = <0 1 2>;
         };
                    combo_lbrk {
             timeout-ms = <120>;
-            key-positions = <13 23>;
+            key-positions = <12 23>;
             bindings = <&kp RBKT>;
             layers = <0 1 2>;
         };
@@ -397,7 +409,7 @@ ZMK_MACRO(t_f9,
         };
                    combo_ast {
             timeout-ms = <120>;
-            key-positions = <5 15 >;
+            key-positions = <25 16 >;
             bindings = <&kp ASTERISK>;
             layers = <0 1 2>;
         };
@@ -435,7 +447,7 @@ ZMK_MACRO(t_f9,
           
                    combo_tilda {
             timeout-ms = <120>;
-            key-positions = <14 24>;
+            key-positions = <2 13>;
             bindings = <&kp TILDE>;
             layers = <0 1 2>;
         };
@@ -445,9 +457,15 @@ ZMK_MACRO(t_f9,
             bindings = <&kp MINUS>;
             layers = <0 1 2>;
         };
+                           combo_pipe {
+            timeout-ms = <120>;
+            key-positions = < 14 24>;
+            bindings = <&kp PIPE>;
+            layers = <0 1 2>;
+        };
                    combo_dollar {
             timeout-ms = <120>;
-            key-positions = <15 25>;
+            key-positions = <26 27>;
             bindings = <&kp DLLR>;
             layers = <0 1 2>;
         };
@@ -520,7 +538,7 @@ ZMK_MACRO(t_f9,
 
             artsey_p {
             timeout-ms = <120>;
-            key-positions = <20 21 23>;
+            key-positions = <26 28 29>;
             bindings = <&kp P>;
             layers = <3>;
         };
