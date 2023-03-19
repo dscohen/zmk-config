@@ -281,7 +281,7 @@ ZMK_MACRO(t_f9,
             timeout-ms = <100>;
             key-positions = <7 17>;
             bindings = <&sk RGUI>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3>;
         };
         
             combo_tab {
@@ -318,7 +318,7 @@ ZMK_MACRO(t_f9,
             timeout-ms = <50>;
             key-positions = <6 16>;
             bindings = <&kp LA(SPACE)>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3>;
         };
            combo_paste {
             timeout-ms = <120>;
@@ -465,7 +465,7 @@ ZMK_MACRO(t_f9,
                          combo_artsey {
             timeout-ms = <170>;
             key-positions = <6 7 8 9>;
-            bindings = <&tg 3>;
+            bindings = <&tog 3>;
             layers = <0 1 2 3>;
         };
 
@@ -700,10 +700,10 @@ ZMK_MACRO(t_f9,
 
         artsey_layer {
 		bindings = <
-		&t_5        &t_6       &t_7         &t_8        &t_9    			    &kp RC(B)       &none       &none              &none        &t_scroll  
-		&kp A        &kp R       &kp S         &kp T        &none 			     &none          &kp T        &kp S       &kp R         &kp A        
-		&kp O        &kp I       &kp E         &kp N        &none                &none           &kp N        &kp E       &kp I         &kp O        
-					                        &to 0      &kp SPACE 			        &trans  &trans 
+		&t_5        &t_6       &t_7         &t_8        &t_9    			    &kp J           &kp L  &kp U        &kp Y   &kp QUOT
+		&kp A        &kp R       &kp S         &kp T        &none 			     &kp M         &kp N  &kp E        &kp I   &kp O    
+		&kp O        &kp I       &kp E         &kp N        &none                &kp K           &phtr LSFT H  &kp COMMA    &kp DOT &mt LSFT RET       
+					                        &to 0      &kp SPACE 			        &kp SPACE  &trans 
 		>;
 		};	
 
