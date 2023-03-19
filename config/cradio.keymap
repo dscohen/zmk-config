@@ -604,7 +604,7 @@ ZMK_MACRO(t_f9,
             artsey_bs {
             timeout-ms = <120>;
             key-positions = <17 26>;
-            bindings = <&kp G>;
+            bindings = <&kp BACKSPACE>;
 
             layers = <3>;
         };
