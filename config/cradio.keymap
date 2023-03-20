@@ -721,7 +721,7 @@ ZMK_MACRO(t_f9,
 		&t_5        &t_6       &t_7         &t_8        &t_9    			    &kp J           &kp L  &kp U        &kp Y   &kp QUOT
 		&kp A        &kp R       &kp S         &kp T        &none 			     &kp M         &kp N  &kp E        &kp I   &kp O    
 		&kp O        &kp I       &kp E         &kp N        &none                &kp K           &phtr LSFT H  &kp COMMA    &kp DOT &mt LSFT RET       
-					                        &to 0      &kp SPACE 			        &kp SPACE  &trans 
+					                        &to 0      &kp SPACE 			        &kp SPACE  &sk LSHIFT
 		>;
 		};	
 
