@@ -18,6 +18,11 @@
 
 / {
     macros {
+ZMK_MACRO(warpd,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LALT &kp LALT &kp F >;
+    )
 ZMK_MACRO(ff_tab,
         wait-ms = <30>;
         tap-ms = <40>;
@@ -465,7 +470,7 @@ ZMK_MACRO(t_f9,
         };
                    combo_dollar {
             timeout-ms = <120>;
-            key-positions = <26 27>;
+            key-positions = <16 7>;
             bindings = <&kp DLLR>;
             layers = <0 1 2>;
         };
@@ -694,7 +699,7 @@ ZMK_MACRO(t_f9,
 		&kp Q       &kp W &kp F   &kp P &lt 5 B                           &lt 5 J           &kp L  &kp U        &kp Y   &kp QUOT
 		&kp A       &kp R &kp S   &kp T &lt 4 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &kp O    
 		&kp Z       &kp X &kp C   &phtl LSFT D &kp V				            &kp K           &phtr LSFT H  &kp COMMA    &kp DOT &mt LSFT RET
-          				&sk LSFT  &sl 2  	        			&kp SPACE &tdRT
+          				&sk LSFT  &warpd  	        			&kp SPACE &tdRT
 		>;
 		};
 
