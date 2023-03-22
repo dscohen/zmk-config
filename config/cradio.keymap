@@ -21,7 +21,7 @@
 ZMK_MACRO(warpd,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp LALT &kp LALT &kp F >;
+        bindings = <&sk LALT &sk LALT &kp F >;
     )
 ZMK_MACRO(ff_tab,
         wait-ms = <30>;
