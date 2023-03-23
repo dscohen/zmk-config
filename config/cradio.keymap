@@ -470,7 +470,7 @@ ZMK_MACRO(t_f9,
         };
                    combo_dollar {
             timeout-ms = <120>;
-            key-positions = <16 7>;
+            key-positions = <3 14>;
             bindings = <&kp DLLR>;
             layers = <0 1 2>;
         };
