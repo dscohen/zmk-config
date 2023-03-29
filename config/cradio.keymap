@@ -503,10 +503,10 @@ ZMK_MACRO(t_f9,
         /* 
         * put where h is
         */
-            artsey_s { 
+            artsey_d { 
             timeout-ms = <120>;
             key-positions = <26 28>;
-            bindings = <&kp S>;
+            bindings = <&kp D>;
             layers = <3>;
         };
 
@@ -514,19 +514,19 @@ ZMK_MACRO(t_f9,
         /* 
         * put where ly is
         */
-            artsey_a { 
+            artsey_f { 
             timeout-ms = <120>;
             key-positions = <6 8>;
-            bindings = <&kp A>;
+            bindings = <&kp F>;
             layers = <3>;
         };
         /* 
         * put where jl is
         */
-            artsey_t { 
+            artsey_g { 
             timeout-ms = <120>;
             key-positions = <5 6>;
-            bindings = <&kp T>;
+            bindings = <&kp G>;
             layers = <3>;
         };
 
@@ -535,7 +535,14 @@ ZMK_MACRO(t_f9,
         */
             artsey_r { 
             timeout-ms = <120>;
-            key-positions = <16 27>;
+            key-positions = <15 16>;
+            bindings = <&kp R>;
+            layers = <3>;
+        };
+                */
+            artsey_question { 
+            timeout-ms = <120>;
+            key-positions = <15 25>;
             bindings = <&kp R>;
             layers = <3>;
         };
@@ -543,7 +550,7 @@ ZMK_MACRO(t_f9,
 
             artsey_p {
             timeout-ms = <120>;
-            key-positions = <26 28 29>;
+            key-positions = <27 28 29>;
             bindings = <&kp P>;
             layers = <3>;
         };
@@ -597,19 +604,19 @@ ZMK_MACRO(t_f9,
             bindings = <&kp C>;
             layers = <3>;
         };
-            artsey_d {
+            artsey_s {
             timeout-ms = <120>;
             key-positions = <16 17 18>;
             bindings = <&kp D>;
             layers = <3>;
         };
-            artsey_f {
+            artsey_t {
             timeout-ms = <120>;
             key-positions = <16 17>;
             bindings = <&kp F>;
             layers = <3>;
         };
-            artsey_g {
+            artsey_a {
             timeout-ms = <120>;
             key-positions = <17 18>;
             bindings = <&kp G>;
