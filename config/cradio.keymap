@@ -542,8 +542,9 @@ ZMK_MACRO(t_f9,
             artsey_question { 
             timeout-ms = <120>;
             key-positions = <15 25>;
-            bindings = <&kp R>;
-            layers = <3>;
+            bindings = <&kp QMARK>;
+            layers = <3>
+            ;
         };
 
 
@@ -606,19 +607,19 @@ ZMK_MACRO(t_f9,
             artsey_s {
             timeout-ms = <120>;
             key-positions = <16 17 18>;
-            bindings = <&kp D>;
+            bindings = <&kp S>;
             layers = <3>;
         };
             artsey_t {
             timeout-ms = <120>;
             key-positions = <16 17>;
-            bindings = <&kp F>;
+            bindings = <&kp T>;
             layers = <3>;
         };
             artsey_a {
             timeout-ms = <120>;
             key-positions = <17 18>;
-            bindings = <&kp G>;
+            bindings = <&kp A>;
             layers = <3>;
         };
 
