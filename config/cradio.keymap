@@ -539,7 +539,6 @@ ZMK_MACRO(t_f9,
             bindings = <&kp R>;
             layers = <3>;
         };
-                */
             artsey_question { 
             timeout-ms = <120>;
             key-positions = <15 25>;
