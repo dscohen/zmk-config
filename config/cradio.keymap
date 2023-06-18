@@ -277,7 +277,7 @@ ZMK_MACRO(t_f9,
         };
         combo_backspace_fast {
             timeout-ms = <15>;
-            key-positions = <11 12>;
+            key-positions = <17 18>;
             bindings = <&kp BACKSPACE>;
             layers = <0 3>;
         };
