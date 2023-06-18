@@ -769,7 +769,7 @@ ZMK_MACRO(t_f9,
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&to 9 >, <&to 8>>;
+            bindings = <&sl 8 >, <&sl 9>;
     };
     tdBKT: tap_dance_bracket {
             compatible = "zmk,behavior-tap-dance";
@@ -908,7 +908,7 @@ ZMK_MACRO(t_f9,
         artsey_sys_nav {
 		bindings = <
         &none    &none   &none  &none  &none       &kp LG(LEFT)    &mt LSFT LA(LEFT)  &mt LSFT LA(RIGHT)    &kp LG(RIGHT) &sk LSFT
-        &none  &none  &none  &none  &none           &kp RC(A)    &kp LEFT        &kp DOWN      &kp UP           &kp RIGHT      
+        &none  &none  &none  &none  &none           &to 9    &kp LEFT        &kp DOWN      &kp UP           &kp RIGHT      
         &none    &none  &none  &none  &none         &tdBKT     &warpd   &sk LALT  &sk LCTL &kp LGUI
                                                                        &trans &trans &trans &to 3  
 		>;
