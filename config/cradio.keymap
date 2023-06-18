@@ -28,6 +28,16 @@ ZMK_MACRO(ff_tab,
         tap-ms = <40>;
         bindings = <&kp LG(L) &kp PERCENT &kp SPACE >;
     )
+ZMK_MACRO(t_next,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp RC(A) &kp N >;
+    )
+ZMK_MACRO(t_prev,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp RC(A) &kp P >;
+    )
 ZMK_MACRO(t_0,
         wait-ms = <30>;
         tap-ms = <40>;
