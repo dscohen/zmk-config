@@ -261,13 +261,19 @@ ZMK_MACRO(t_f9,
             timeout-ms = <50>;
             key-positions = <5 6>;
             bindings = <&kp BSLH>;
-            layers = <0 1 2>;
+            layers = <0 1 2 8>;
         };
          combo_backspace {
             timeout-ms = <50>;
             key-positions = <11 12>;
             bindings = <&kp BACKSPACE>;
-            layers = <0 1 2>;
+            layers = <0 1 2 8>;
+        };
+        combo_backspace_fast {
+            timeout-ms = <15>;
+            key-positions = <11 12>;
+            bindings = <&kp BACKSPACE>;
+            layers = <0 3>;
         };
         
             combo_repeat {
@@ -275,6 +281,12 @@ ZMK_MACRO(t_f9,
             key-positions = <22 23>;
             bindings = <&key_repeat>;
             layers = <0 1 2>;
+        };
+            combo_repeat_artsey {
+            timeout-ms = <50>;
+            key-positions = <16 26>;
+            bindings = <&key_repeat>;
+            layers = <3>;
         };
          combo_sk_lgui {
             timeout-ms = <100>;
@@ -356,13 +368,13 @@ ZMK_MACRO(t_f9,
             timeout-ms = <50>;
             key-positions = <6 7>;
             bindings = <&kp LPRN>;
-            layers = <0 1 2>;
+            layers = <0 1 2 8>;
         };
                    combo_lbrn {
             timeout-ms = <120>;
             key-positions = <7 8>;
             bindings = <&kp RPRN>;
-            layers = <0 1 2>;
+            layers = <0 1 2 8>;
         };
                    combo_qstn {
             timeout-ms = <120>;
@@ -533,10 +545,10 @@ ZMK_MACRO(t_f9,
         /* 
         * put where . is
         */
-            artsey_r { 
+            artsey_p { 
             timeout-ms = <120>;
             key-positions = <15 16>;
-            bindings = <&kp R>;
+            bindings = <&kp P>;
             layers = <3>;
         };
             artsey_question { 
@@ -548,15 +560,11 @@ ZMK_MACRO(t_f9,
         };
 
 
-            artsey_p {
-            timeout-ms = <120>;
-            key-positions = <27 28 29>;
-            bindings = <&kp P>;
-            layers = <3>;
-        };
+            
+        
             artsey_q {
-            timeout-ms = <120>;
-            key-positions = <16 18 19>;
+            timeout-ms = <30>;
+            key-positions = <7 8>;
             bindings = <&kp Q>;
             layers = <3>;
         };
@@ -575,7 +583,7 @@ ZMK_MACRO(t_f9,
         };
             artsey_x {
             timeout-ms = <120>;
-            key-positions = <17 18 19>;
+            key-positions = <5 10>;
             bindings = <&kp X>;
             layers = <3>;
         };
@@ -604,44 +612,142 @@ ZMK_MACRO(t_f9,
             bindings = <&kp C>;
             layers = <3>;
         };
-            artsey_s {
+            artsey_main {
             timeout-ms = <120>;
             key-positions = <16 17 18>;
-            bindings = <&kp S>;
-            layers = <3>;
+            bindings = <&to 3>;
+            layers = <3 8 9>;
         };
-            artsey_t {
-            timeout-ms = <120>;
+            artsey_l {
+            timeout-ms = <30>;
             key-positions = <16 17>;
-            bindings = <&kp T>;
+            bindings = <&kp L>;
             layers = <3>;
         };
-            artsey_a {
-            timeout-ms = <120>;
-            key-positions = <17 18>;
-            bindings = <&kp A>;
-            layers = <3>;
-        };
-
-
-
             artsey_bang {
             timeout-ms = <120>;
             key-positions = <18 28>;
             bindings = <&kp EXCL>;
             layers = <3>;
         };
-            artsey_bs {
-            timeout-ms = <120>;
+            artsey_u {
+            timeout-ms = <30>;
             key-positions = <17 26>;
-            bindings = <&kp BACKSPACE>;
-
+            bindings = <&kp U>;
             layers = <3>;
-        };
+            };
 
-        
+             artsey_esc {
+            timeout-ms = <80>;
+            key-positions = <27 28>;
+            bindings = <&kp ESC>;
+            layers = <3>;
+            };       
 
-        
+        /* ------------------arstsey symbols--------------------------*/
+            artsey_dollar {
+            timeout-ms = <30>;
+            key-positions = <17 26>;
+            bindings = <&kp DLLR>;
+            layers = <8>;
+            };
+
+             artsey_amp {
+            timeout-ms = <80>;
+            key-positions = <15 6>;
+            bindings = <&kp AMPS>;
+            layers = <8>;
+            };       
+
+            artsey_tilde {
+            timeout-ms = <30>;
+            key-positions = <17 26>;
+            bindings = <&kp TILDE>;
+            layers = <8>;
+            };
+
+             artsey_underscore {
+            timeout-ms = <80>;
+            key-positions = <16 17>;
+            bindings = <&kp UNDER>;
+            layers = <8>;
+            };       
+
+            artsey_hash {
+            timeout-ms = <30>;
+            key-positions = <18 28>;
+            bindings = <&kp HASH>;
+            layers = <8>;
+            };
+
+             artsey_equal {
+            timeout-ms = <80>;
+            key-positions = <26 27>;
+            bindings = <&kp EQUAL>;
+            layers = <8>;
+            };       
+            artsey_percent {
+            timeout-ms = <30>;
+            key-positions = <18 28>;
+            bindings = <&kp PERCENT>;
+            layers = <8>;
+            };
+
+             artsey_minus {
+            timeout-ms = <80>;
+            key-positions = <16 17 18>;
+            bindings = <&kp MINUS>;
+            layers = <8>;
+            };       
+
+            artsey_plus {
+            timeout-ms = <30>;
+            key-positions = <25 26>;
+            bindings = <&kp PLUS>;
+            layers = <8>;
+            };
+
+             artsey_asterisk {
+            timeout-ms = <80>;
+            key-positions = <25 16>;
+            bindings = <&kp ASTERISK>;
+            layers = <8>;
+            };       
+
+
+            artsey_carrot {
+            timeout-ms = <30>;
+            key-positions = <7 18>;
+            bindings = <&kp CARET>;
+            layers = <8>;
+            };
+
+             artsey_tilde {
+            timeout-ms = <80>;
+            key-positions = <6 16>;
+            bindings = <&kp TILDE>;
+            layers = <8>;
+            };       
+
+            artsey_pipe {
+            timeout-ms = <30>;
+            key-positions = <9 19>;
+            bindings = <&kp U>;
+            layers = <3>;
+            };
+
+             artsey_semicolon {
+            timeout-ms = <80>;
+            key-positions = <19 29>;
+            bindings = <&kp ESC>;
+            layers = <3>;
+            };       
+             artsey_tmux_artsey {
+            timeout-ms = <80>;
+            key-positions = <27 28>;
+            bindings = <&to 10>;
+            layers = <5>;
+            };       
     };
 
     behaviors {
@@ -661,9 +767,31 @@ ZMK_MACRO(t_f9,
         release-after-ms = <1000>;
         quick-release;
         };
-    tdRT: tap_dance_right_thumb {
+        // 1st to system, 2nd to symnum,
+    tdART: tap_dance_right_thumb {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&to 9 >, <&to 8>>;
+    };
+    tdBKT: tap_dance_bracket {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LBKT >, <&kp RBKT>;
+    };
+    tdBRC: tap_dance_braces {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_2";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LBRC >, <&kp RBRC>;
+    };
+    tdRT: tap_dance_right_base {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_3";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&sl 6>, <&to 6>, <&to 0>;
@@ -708,7 +836,7 @@ ZMK_MACRO(t_f9,
 		&kp Z       &kp X &kp C   &phtl LSFT D &kp V				            &kp K           &phtr LSFT H  &kp COMMA    &kp DOT &mt LSFT RET
           				&sk LSFT  &warpd  	        			&kp SPACE &tdRT
 		>;
-		};
+		}; 
 
        		nums_layer {
 		bindings = <
@@ -727,16 +855,16 @@ ZMK_MACRO(t_f9,
 					                        &trans      &sk LSFT  		            &trans      &sl 5 
 		>;
 		};
-
+        // Layer 3
         artsey_layer {
 		bindings = <
-		&t_5        &t_6       &t_7         &t_8        &t_9    			    &kp J           &kp L  &kp U        &kp Y   &kp QUOT
+		&t_5        &t_6       &t_7         &t_8        &t_9    			    &kp J           &kp R  &kp S        &kp Y   &kp QUOT
 		&kp A        &kp R       &kp S         &kp T        &none 			     &kp M         &kp N  &kp E        &kp I   &kp O    
-		&kp O        &kp I       &kp E         &kp N        &none                &kp K           &phtr LSFT H  &kp COMMA    &kp DOT &mt LSFT RET       
-					                        &to 0      &kp SPACE 			        &kp SPACE  &sk LSHIFT
+		&kp O        &kp I       &kp E         &kp N        &none                &kp K           &kp H  &kp T    &kp A &mt LSFT RET       .
+					                        &to 0      &kp SPACE 			        &kp SPACE  &tdART
 		>;
 		};	
-
+        // layer 4
 		arrows_layer {
 		bindings = <
 		&bootloader &reset       &none       &kp DEL       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LA(RIGHT)    &kp LG(RIGHT) &kp LG(UP) 
@@ -745,7 +873,7 @@ ZMK_MACRO(t_f9,
 					                        &trans      &kp LCTL                  &kp SPC  &trans 
 		>;
 		};	
-
+        // layer 5
         tmux_layer {
 		bindings = <
 		&t_5        &t_6       &t_7         &t_8        &t_9    			    &kp RC(B)       &t_f5       &t_f6              &t_f7        &t_scroll  
@@ -769,6 +897,33 @@ ZMK_MACRO(t_f9,
         &kp LC(LS(LA(A)))    &kp LC(LS(LA(R)))    &kp LC(LS(LA(S)))    &kp LC(LS(LA(T)))    &kp LC(LS(LA(G)))            &kp LC(LS(LA(M)))    &kp LC(LS(LA(N)))   &kp LC(LS(LA(E)))       &kp LC(LS(LA(I)))   &kp LC(LS(LA(O)))
         &kp LC(LS(LA(Z)))    &kp LC(LS(LA(X)))    &kp LC(LS(LA(C)))    &kp LC(LS(LA(D)))    &kp LC(LS(LA(V)))            &kp LC(LS(LA(K)))    &kp LC(LS(LA(H)))   &kp LC(LS(LA(COMMA)))      &kp LC(LS(LA(DOT))) &kp LC(LS(LA(SLASH)))
                                                                        &kp LC(LS(LA(EQUAL))) &kp LC(LS(LA(AMPS)))        &kp LC(LS(LA(SPACE))) &kp LC(LS(LA(EXCL))) 
+		>;
+		}; 
+        /* 8 */
+        artsey_numsym {
+		bindings = <
+        &none    &none   &none  &none  &none       &kp NUM_5   &kp NUM_6    &kp NUM_7  &kp NUM_8   &kp NUM_9
+        &none  &none  &none  &none  &none           &kp NUM_0   &kp NUM_1    &kp NUM_2  &kp NUM_3   &kp NUM_4 
+        &none    &none  &none  &none  &none         &tdBKT     &tdBRC   &kp COMMA      &kp DOT &kp FSLH
+                                                                       &trans &trans &trans &to 3  
+		>;
+		}; 
+                /* 9 */
+        artsey_sys_nav {
+		bindings = <
+        &none    &none   &none  &none  &none       &kp LG(LEFT)    &mt LSFT LA(LEFT)  &mt LSFT LA(RIGHT)    &kp LG(RIGHT) &sk LSFT
+        &none  &none  &none  &none  &none           &kp RC(A)    &kp LEFT        &kp DOWN      &kp UP           &kp RIGHT      
+        &none    &none  &none  &none  &none         &tdBKT     &warpd   &sk LALT  &sk LCTL &kp LGUI
+                                                                       &trans &trans &trans &to 3  
+		>;
+		}; 
+                /* 10 */
+        artsey_tmux {
+		bindings = <
+        &none    &none   &none  &none  &none       &t_prev    &t_next  &    &kp LG(RIGHT) &t_scroll
+        &none  &none  &none  &none  &none           &t_left    &t_down        &t_up      &t_right           &kp RIGHT      
+        &none    &none  &none  &none  &none         &t_hsplit     &t_new   &t_name  &sk LCTL &t_vsplit
+                                                                       &trans &trans &trans &to 3  
 		>;
 		}; 
 	};
