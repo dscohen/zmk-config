@@ -159,7 +159,7 @@ ZMK_MACRO(skshft,
         bindings = <&sk LSHIFT >;
     )
 
-    
+
 
 ZMK_MACRO(t_f1,
         wait-ms = <30>;
@@ -654,14 +654,14 @@ ZMK_MACRO(t_f9,
             bindings = <&kp AMPS>;
             layers = <8>;
             };       
-
+/*
             artsey_tilde {
             timeout-ms = <30>;
             key-positions = <17 26>;
             bindings = <&kp TILDE>;
             layers = <8>;
             };
-
+*/
              artsey_underscore {
             timeout-ms = <80>;
             key-positions = <16 17>;
