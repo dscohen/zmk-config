@@ -916,7 +916,7 @@ ZMK_MACRO(t_f9,
                 /* 10 */
         artsey_tmux {
 		bindings = <
-        &none    &none   &none  &none  &none       &t_prev    &t_next  &    &kp LG(RIGHT) &t_scroll
+        &none    &none   &none  &none  &none       &t_kpane    &t_prev  &t_next    &kp LG(RIGHT) &t_scroll
         &none  &none  &none  &none  &none           &t_left    &t_down        &t_up      &t_right           &kp RIGHT      
         &none    &none  &none  &none  &none         &t_hsplit     &t_new   &t_name  &sk LCTL &t_vsplit
                                                                        &trans &trans &trans &to 3  
