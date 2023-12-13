@@ -321,6 +321,21 @@ ZMK_MACRO(t_f9,
             layers = <0 1 2>;
         };
 
+            combo_gui {
+            timeout-ms = <100>;
+            key-positions = <12 13 14>;
+            bindings = <&sk LGUI>;
+            layers = <0 1 2>;
+        };
+
+            combo_amp {
+            timeout-ms = <175>;
+            key-positions = <0 1>;
+            bindings = <&kp AMPS>;
+            layers = <0 1 2>;
+        };
+
+
 
 
         
@@ -368,12 +383,14 @@ ZMK_MACRO(t_f9,
             timeout-ms = <120>;
             key-positions = <3 4>;
             bindings = <&kp RBRC >;
+            require-prior-idle-ms = <100>;
             layers = <0 1 2>;
         };
                    combo_rprn {
             timeout-ms = <50>;
             key-positions = <6 7>;
             bindings = <&kp LPRN>;
+            require-prior-idle-ms = <70>;
             layers = <0 1 2 8>;
         };
                    combo_lbrn {
@@ -781,12 +798,7 @@ ZMK_MACRO(t_f9,
             tapping-term-ms = <200>;
             bindings = <&sl 8 >, <&sl 9>;
     };
-    tdBKT: tap_dance_bracket {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_1";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LBKT >, <&kp RBKT>;
+   
     };
     tdBRC: tap_dance_braces {
             compatible = "zmk,behavior-tap-dance";
@@ -933,4 +945,4 @@ ZMK_MACRO(t_f9,
 		>;
 		}; 
 	};
-};
+
