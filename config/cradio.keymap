@@ -799,14 +799,8 @@ ZMK_MACRO(t_f9,
             bindings = <&sl 8 >, <&sl 9>;
     };
    
-    };
-    tdBRC: tap_dance_braces {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_2";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LBRC >, <&kp RBRC>;
-    };
+
+
     tdRT: tap_dance_right_base {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_3";
@@ -841,7 +835,7 @@ ZMK_MACRO(t_f9,
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;    // <---[[the W key]]
         };
-
+};
 
         keymap {
                 compatible = "zmk,keymap";
