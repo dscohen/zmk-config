@@ -26,61 +26,61 @@ ZMK_MACRO(ff_tab,
 ZMK_MACRO(t_0,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp RC(A) &kp NUM_0 >;
+        bindings = <&kp RC(A) &kp N0 >;
     )
 
 ZMK_MACRO(t_1,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp RC(A) &kp NUM_1>;
+        bindings = <&kp RC(A) &kp N1>;
     )
 
 ZMK_MACRO(t_2,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp RC(A) &kp NUM_2 >;
+        bindings = <&kp RC(A) &kp N2 >;
     )
 
 ZMK_MACRO(t_3,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp RC(A) &kp NUM_3>;
+        bindings = <&kp RC(A) &kp N3>;
     )
 
 ZMK_MACRO(t_4,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp RC(A) &kp NUM_4 >;
+        bindings = <&kp RC(A) &kp N4 >;
     )
 
 ZMK_MACRO(t_5,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp RC(A) &kp NUM_5 >;
+        bindings = <&kp RC(A) &kp N5 >;
     )
 
 ZMK_MACRO(t_6,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp RC(A) &kp NUM_6 >;
+        bindings = <&kp RC(A) &kp N6 >;
     )
 
 ZMK_MACRO(t_7,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp RC(A) &kp NUM_7 >;
+        bindings = <&kp RC(A) &kp N7 >;
     )
 
 ZMK_MACRO(t_8,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp RC(A) &kp NUM_8 >;
+        bindings = <&kp RC(A) &kp N8 >;
     )
 
 ZMK_MACRO(t_9,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp RC(A) &kp NUM_9 >;
+        bindings = <&kp RC(A) &kp N9 >;
     )
 
 ZMK_MACRO(t_LEFT,
@@ -157,7 +157,7 @@ ZMK_MACRO(skshft,
 ZMK_MACRO(t_f9,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp RC(A) &kp NUM_0 >;
+        bindings = <&kp RC(A) &kp N0 >;
     )
 
 ZMK_MACRO(t_f1,
@@ -272,7 +272,7 @@ ZMK_MACRO(t_f9,
          combo_sk_ctrl {
             timeout-ms = <50>;
             key-positions = <21 22>;
-            bindings = <&sk LCTL>;
+            bindings = <&sk LCTRL>;
             layers = <0 1 2>;
         };
         
@@ -318,7 +318,7 @@ ZMK_MACRO(t_f9,
             combo_colon {
             timeout-ms = <100>;
             key-positions = <17 27>;
-            bindings = <&kp COLN>;
+            bindings = <&kp COLON>;
             layers = <0 1 2>;
         };
             combo_alt_instant {
@@ -331,7 +331,7 @@ ZMK_MACRO(t_f9,
             combo_ctl_instant {
             timeout-ms = <70>;
             key-positions = <11 21>;
-            bindings = <&kp LCTL>;
+            bindings = <&kp LCTRL>;
             layers = <0>;
         };
         
@@ -439,7 +439,7 @@ ZMK_MACRO(t_f9,
             artsey_ctrl {
             timeout-ms = <120>;
             key-positions = <10 23>;
-            bindings = <&kp LCTL>;
+            bindings = <&kp LCTRL>;
             layers = <3>;
         };
             artsey_gui {
@@ -457,7 +457,7 @@ ZMK_MACRO(t_f9,
             artsey_shift {
             timeout-ms = <120>;
             key-positions = <10 21>;
-            bindings = <&kp LSFT>;
+            bindings = <&kp LSHIFT>;
             layers = <3>;
         };
             artsey_wordlock {
@@ -529,7 +529,7 @@ ZMK_MACRO(t_f9,
             artsey_quote {
             timeout-ms = <120>;
             key-positions = <13 21 22>;
-            bindings = <&kp QUOT>;
+            bindings = <&kp SQT>;
             layers = <3>;
         };
             artsey_comm {
@@ -608,15 +608,15 @@ ZMK_MACRO(t_f9,
 		bindings = <
 		&kp Q       &kp C &kp H   &kp P &kp V                           &kp K           &kp Y  &kp O        &kp J   &kp FSLH
 		&kp R       &kp S &kp N   &kp T &lt 4 G 		   	            &lt 1 W         &kp U  &kp E        &kp I   &kp A    
-		&kp X       &kp M &kp L   &kp D &kp B				            &sl 2           &kp F  &kp QUOT    &kp COMMA &kp DOT
-          				&skq LSFT  &sl 2  	        			&kp SPC &tdRT
+		&kp X       &kp M &kp L   &kp D &kp B				            &sl 2           &kp F  &kp SQT    &kp COMMA &kp DOT
+          				&skq LSHIFT  &sl 2  	        			&kp SPACE &tdRT
 		>;
 		};
 
        		nums_layer {
 		bindings = <
-		&kp NUM_5   &kp NUM_6    &kp NUM_7  &kp NUM_8   &kp NUM_9		        &kp EQUAL   &kp LBKT &none      &sys_reset   &bootloader
-		&kp NUM_0   &kp NUM_1    &kp NUM_2  &kp NUM_3   &lt 4 NUM_4 		    &trans      &kp LGUI &kp RBKT   &none   &none 
+		&kp N5   &kp N6    &kp N7  &kp N8   &kp N9		        &kp EQUAL   &kp LBKT &none      &sys_reset   &bootloader
+		&kp N0   &kp N1    &kp N2  &kp N3   &lt 4 N4 		    &trans      &kp LGUI &kp RBKT   &none   &none 
 		&kp COMMA   &kp DOT 	 &sk LGUI   &none       &none  	                &kp MINUS   &kp RBKT &none      &none   &none  
 					                        &trans      &trans                 &trans &trans 
 		>;
@@ -625,9 +625,9 @@ ZMK_MACRO(t_f9,
         syms_layer {
 		bindings = <                                                                                                     
 		&sk LGUI  &kp AT      &kp LBRC    &kp RBRC    &kp SEMICOLON		        &kp GRAVE     &kp CARET &kp HASH    &kp QMARK  &kp PERCENT 
-		&kp LBKT    &kp RBKT    &kp LPRN    &kp RPRN    &mo 4 		                &lt 1 EQUAL   &kp PLUS &kp MINUS    &kp FSLH   &kp ASTERISK
+		&kp LBKT    &kp RBKT    &kp LPAR    &kp RPAR    &mo 4 		                &lt 1 EQUAL   &kp PLUS &kp MINUS    &kp FSLH   &kp ASTERISK
 		&sk LSHIFT       &none 	    &kp LG(C)    &kp LG(V)    &kp PIPE 	                &kp AMPS      &kp UNDER &kp DLLR    &kp EXCL   &kp TILDE 
-					                        &trans      &sk LSFT  		            &trans      &sl 5 
+					                        &trans      &sk LSHIFT  		            &trans      &sl 5 
 		>;
 		};
 
@@ -645,7 +645,7 @@ ZMK_MACRO(t_f9,
 		&bootloader &sys_reset       &none       &kp DEL       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LA(RIGHT)    &kp LG(RIGHT) &kp LG(UP) 
 		&none       &none       &none       &kp LSHIFT   &trans 			        &kp LEFT        &kp DOWN      &kp UP           &kp RIGHT     &trans 
 		&none       &none       &none       &kp LALT       &none                   &kp BSLH        &trans        &trans           &trans        &kp LG(DOWN)
-					                        &trans      &kp LCTL                  &kp SPC  &trans 
+					                        &trans      &kp LCTRL                  &kp SPACE  &trans 
 		>;
 		};	
 
@@ -661,14 +661,14 @@ ZMK_MACRO(t_f9,
 		helper_layer {
 		bindings = <
 		&kp LC(LS(F14)) &kp LC(LS(F15)) &kp LC(LS(F16)) &kp LC(LS(F17)) &kp LC(LS(F18)) 		    &bt BT_SEL 0    &bt BT_SEL 1 &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_CLR
-		&kp LC(LS(NUM_0)) &kp LC(LS(NUM_6)) &kp LC(LS(NUM_7)) &kp LC(LS(NUM_8)) &kp LC(LS(NUM_9))  		    &kp LEFT        &trans      &trans             &kp RIGHT   &kp K_MUTE 
-		&kp LC(LS(NUM_1))  &kp LC(LS(NUM_2)) &kp LC(LS(NUM_3)) &kp LC(LS(NUM_4)) &kp LC(LS(NUM_5))   			&kp C_PREV  &kp C_PP  &kp C_NEXT           &kp C_VOL_UP  &kp C_VOL_DN   
+		&kp LC(LS(N0)) &kp LC(LS(N6)) &kp LC(LS(N7)) &kp LC(LS(N8)) &kp LC(LS(N9))  		    &kp LEFT        &trans      &trans             &kp RIGHT   &kp K_MUTE 
+		&kp LC(LS(N1))  &kp LC(LS(N2)) &kp LC(LS(N3)) &kp LC(LS(N4)) &kp LC(LS(N5))   			&kp C_PREV  &kp C_PP  &kp C_NEXT           &kp C_VOL_UP  &kp C_VOL_DN   
 					                        &trans      &trans  			    &trans &trans 
 		>;
 		};	
         window_layer {
 		bindings = <
-        &kp LC(LS(LA(Q)))    &kp LC(LS(LA(W)))    &kp LC(LS(LA(F)))    &kp LC(LS(LA(P)))    &kp LC(LS(LA(B)))            &kp LC(LS(LA(J)))    &kp LC(LS(LA(L)))   &kp LC(LS(LA(U)))        &kp LC(LS(LA(Y))) &kp LC(LS(LA(QUOT)))
+        &kp LC(LS(LA(Q)))    &kp LC(LS(LA(W)))    &kp LC(LS(LA(F)))    &kp LC(LS(LA(P)))    &kp LC(LS(LA(B)))            &kp LC(LS(LA(J)))    &kp LC(LS(LA(L)))   &kp LC(LS(LA(U)))        &kp LC(LS(LA(Y))) &kp LC(LS(LA(SQT)))
         &kp LC(LS(LA(A)))    &kp LC(LS(LA(R)))    &kp LC(LS(LA(S)))    &kp LC(LS(LA(T)))    &kp LC(LS(LA(G)))            &kp LC(LS(LA(M)))    &kp LC(LS(LA(N)))   &kp LC(LS(LA(E)))       &kp LC(LS(LA(I)))   &kp LC(LS(LA(O)))
         &kp LC(LS(LA(Z)))    &kp LC(LS(LA(X)))    &kp LC(LS(LA(C)))    &kp LC(LS(LA(D)))    &kp LC(LS(LA(V)))            &kp LC(LS(LA(K)))    &kp LC(LS(LA(H)))   &kp LC(LS(LA(COMMA)))      &kp LC(LS(LA(DOT))) &kp LC(LS(LA(SLASH)))
                                                                        &kp LC(LS(LA(EQUAL))) &kp LC(LS(LA(AMPS)))        &kp LC(LS(LA(SPACE))) &kp LC(LS(LA(EXCL))) 
