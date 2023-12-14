@@ -849,10 +849,12 @@ ZMK_MACRO(t_f9,
                 
        		default_layer {
 		bindings = <
-		&kp Q       &kp W &kp F   &kp P &lt 5 B                           &lt 5 J           &kp L  &kp U        &kp Y   &kp QUOT
-		&kp A       &kp R &kp S   &kp T &lt 4 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &kp O    
-		&kp Z       &kp X &kp C   &phtl LSFT D &kp V				            &kp K           &phtr LSFT H  &kp COMMA    &kp DOT &mt LSFT RET
-          				&sk LSFT  &warpd  	        			&kp SPACE &tdRT
+        &kp Q       &kp C &kp H   &kp P &kp V                           &kp K           &kp Y  &kp O        &kp J   &kp FSLH
+		&kp R       &kp S &kp N   &kp T &lt 4 G 		   	            &lt 1 W         &kp U  &kp E        &kp I   &kp A    
+		&kp X       &kp M &kp L   &kp D &kp B				            &sl 2           &kp F  &kp QUOT    &kp COMMA &kp DOT
+          				&skq LSFT  &warpd  	        			&kp SPC &tdRT
+
+
 		>;
 		}; 
 
@@ -904,7 +906,7 @@ ZMK_MACRO(t_f9,
 		helper_layer {
 		bindings = <
 		&kp LC(LS(F14)) &kp LC(LS(F15)) &kp LC(LS(F16)) &kp LC(LS(F17)) &kp LC(LS(F18)) 		    &bt BT_SEL 0    &bt BT_SEL 1 &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_CLR
-		&kp LC(LS(NUM_0)) &kp LC(LS(NUM_6)) &kp LC(LS(NUM_7)) &kp LC(LS(NUM_8)) &kp LC(LS(NUM_9))  		    &kp LEFT        &trans      &trans             &kp RIGHT   &kp K_MUTE 
+		&kp LC(LS(NUM_0)) &kp LC(LS(NUM_6)) &kp LC(LS(NUM_7)) &kp LC(LS(NUM_8)) &kp LC(LS(NUM_9))  		    &kp LEFT        &tog 11       &trans             &kp RIGHT   &kp K_MUTE 
 		&kp LC(LS(NUM_1))  &kp LC(LS(NUM_2)) &kp LC(LS(NUM_3)) &kp LC(LS(NUM_4)) &kp LC(LS(NUM_5))   			&kp C_PREV  &kp C_PP  &kp C_NEXT           &kp C_VOL_UP  &kp C_VOL_DN   
 					                        &trans      &trans  			    &trans &trans 
 		>;
@@ -943,6 +945,16 @@ ZMK_MACRO(t_f9,
         &none    &none  &none  &none  &none         &t_hsplit     &t_new   &t_name  &sk LCTL &t_vsplit
                                                                        &trans &trans &trans &to 3  
 		>;
+        }; 
+        /* 11 */
+        colemak {
+        bindings = <
+		&kp Q       &kp W &kp F   &kp P &lt 5 B                           &lt 5 J           &kp L  &kp U        &kp Y   &kp QUOT
+		&kp A       &kp R &kp S   &kp T &lt 4 G 		   	            &lt 1 M         &kp N  &kp E        &kp I   &kp O    
+		&kp Z       &kp X &kp C   &phtl LSFT D &kp V				            &kp K           &phtr LSFT H  &kp COMMA    &kp DOT &mt LSFT RET
+          				&sk LSFT  &warpd  	        			&kp SPACE &tdRT
+        >;
+
 		}; 
 	};
 
