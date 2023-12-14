@@ -845,7 +845,7 @@ ZMK_MACRO(t_f9,
         &kp Q       &kp C &kp H   &kp P &kp V                           &kp K           &kp Y  &kp O        &kp J   &kp FSLH
 		&kp R       &kp S &kp N   &kp T &lt 4 G 		   	            &lt 1 W         &kp U  &kp E        &kp I   &kp A    
 		&kp X       &kp M &kp L   &kp D &kp B				            &kp Z           &kp F  &kp COMMA    &kp DOT &kp QUOT
-          				&skq LSFT  &warpd  	        			&kp SPC &tdRT
+          				&skq LSFT  &warpd  	        			&kp SPC &lt 6 RET
 		>;
 		}; 
 
@@ -949,3 +949,4 @@ ZMK_MACRO(t_f9,
 		}; 
 	};
 
+};
