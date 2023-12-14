@@ -615,7 +615,7 @@ ZMK_MACRO(t_f9,
 
        		nums_layer {
 		bindings = <
-		&kp NUM_5   &kp NUM_6    &kp NUM_7  &kp NUM_8   &kp NUM_9		        &kp EQUAL   &kp LBKT &none      &reset   &bootloader
+		&kp NUM_5   &kp NUM_6    &kp NUM_7  &kp NUM_8   &kp NUM_9		        &kp EQUAL   &kp LBKT &none      &sys_reset   &bootloader
 		&kp NUM_0   &kp NUM_1    &kp NUM_2  &kp NUM_3   &lt 4 NUM_4 		    &trans      &kp LGUI &kp RBKT   &none   &none 
 		&kp COMMA   &kp DOT 	 &sk LGUI   &none       &none  	                &kp MINUS   &kp RBKT &none      &none   &none  
 					                        &trans      &trans                 &trans &trans 
@@ -642,7 +642,7 @@ ZMK_MACRO(t_f9,
 
 		arrows_layer {
 		bindings = <
-		&bootloader &reset       &none       &kp DEL       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LA(RIGHT)    &kp LG(RIGHT) &kp LG(UP) 
+		&bootloader &sys_reset       &none       &kp DEL       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LA(RIGHT)    &kp LG(RIGHT) &kp LG(UP) 
 		&none       &none       &none       &kp LSHIFT   &trans 			        &kp LEFT        &kp DOWN      &kp UP           &kp RIGHT     &trans 
 		&none       &none       &none       &kp LALT       &none                   &kp BSLH        &trans        &trans           &trans        &kp LG(DOWN)
 					                        &trans      &kp LCTL                  &kp SPC  &trans 
