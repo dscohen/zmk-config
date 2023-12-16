@@ -148,11 +148,6 @@
                     bindings = <&sk LSHIFT >;
                 )
 
-            ZMK_MACRO(t_f9,
-                    wait-ms = <30>;
-                    tap-ms = <40>;
-                    bindings = <&kp RC(A) &kp N0 >;
-                )
 
             ZMK_MACRO(t_f1,
                     wait-ms = <30>;
