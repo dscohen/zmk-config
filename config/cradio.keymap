@@ -10,6 +10,206 @@
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
 
 / {
+
+        macros {
+            ZMK_MACRO(ff_tab,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp LG(L) &kp PERCENT &kp SPACE >;
+                )
+            ZMK_MACRO(t_0,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp N0 >;
+                )
+
+            ZMK_MACRO(t_1,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp N1>;
+                )
+
+            ZMK_MACRO(t_2,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp N2 >;
+                )
+
+            ZMK_MACRO(t_3,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp N3>;
+                )
+
+            ZMK_MACRO(t_4,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp N4 >;
+                )
+
+            ZMK_MACRO(t_5,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp N5 >;
+                )
+
+            ZMK_MACRO(t_6,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp N6 >;
+                )
+
+            ZMK_MACRO(t_7,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp N7 >;
+                )
+
+            ZMK_MACRO(t_8,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp N8 >;
+                )
+
+            ZMK_MACRO(t_9,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp N9 >;
+                )
+
+            ZMK_MACRO(t_LEFT,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp LEFT >;
+                )
+
+            ZMK_MACRO(t_RIGHT,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp RIGHT >;
+                )
+
+            ZMK_MACRO(t_UP,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp UP >;
+                )
+
+            ZMK_MACRO(t_DOWN,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp DOWN >;
+                )
+
+            ZMK_MACRO(t_scroll,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp PG_UP >;
+                )
+
+            ZMK_MACRO(t_hsplit,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp MINUS >;
+                )
+
+            ZMK_MACRO(t_vsplit,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp PIPE >;
+                )
+
+
+            ZMK_MACRO(t_kwin,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp AMPS >;
+                )
+            ZMK_MACRO(t_new,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp C >;
+                )
+
+            ZMK_MACRO(t_name,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp COMMA >;
+                )
+
+            ZMK_MACRO(t_kpane,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp X >;
+                )
+            ZMK_MACRO(skshft,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&sk LSHIFT >;
+                )
+
+            ZMK_MACRO(t_f9,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp N0 >;
+                )
+
+            ZMK_MACRO(t_f1,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp F1>;
+                )
+
+            ZMK_MACRO(t_f2,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp F2 >;
+                )
+
+            ZMK_MACRO(t_f3,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp F3>;
+                )
+
+            ZMK_MACRO(t_f4,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &sl 5 >;
+                )
+
+            ZMK_MACRO(t_f5,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp F5 >;
+                )
+
+            ZMK_MACRO(t_f6,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp F6 >;
+                )
+
+            ZMK_MACRO(t_f7,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp F7 >;
+                )
+
+            ZMK_MACRO(t_f8,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp F8 >;
+                )
+
+            ZMK_MACRO(t_f9,
+                    wait-ms = <30>;
+                    tap-ms = <40>;
+                    bindings = <&kp RC(A) &kp F9 >;
+                )
+
+                
+    };
     combos {
         compatible = "zmk,combos";
         combo_ff_tab {
