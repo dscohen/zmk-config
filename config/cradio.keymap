@@ -151,7 +151,7 @@
             bindings = <&caps_word>;
             layers = <0 1 2>;
         };
-    }
+    };
 
 
     behaviors {
