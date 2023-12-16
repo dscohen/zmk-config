@@ -10,6 +10,150 @@
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_ff_tab {
+            timeout-ms = <50>;
+            key-positions = <13 23>;
+            bindings = <&ff_tab>;
+            layers = <0 1 2>;
+        };
+        combo_left_space {
+            timeout-ms = <20>;
+            key-positions = <12 13>;
+            bindings = <&kp SPACE>;
+            layers = <0 1 2>;
+        };
+        combo_right_space {
+            timeout-ms = <20>;
+            key-positions = <16 17>;
+            bindings = <&kp RET>;
+            layers = <0 1 2>;
+        };
+        combo_z {
+            timeout-ms = <70>;
+            key-positions = <25 26>;
+            bindings = <&kp Z>;
+            layers = <0 1 2>;
+        };
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            bindings = <&kp ESC>;
+            layers = <0 1 2>;
+        };
+         combo_sk_alt {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&sk LALT>;
+            layers = <0 1 2>;
+        };
+         combo_iterm {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp LC(BSLH)>;
+            layers = <0 1 2>;
+        };
+         combo_sk_ctrl {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&sk LCTRL>;
+            layers = <0 1 2>;
+        };
+        
+         combo_backslash {
+            timeout-ms = <50>;
+            key-positions = <5 6>;
+            bindings = <&kp BSLH>;
+            layers = <0 1 2>;
+        };
+         combo_backspace {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+            bindings = <&kp BACKSPACE>;
+            layers = <0 1 2>;
+        };
+        
+            combo_repeat {
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            bindings = <&key_repeat>;
+            layers = <0 1 2>;
+        };
+         combo_sk_lgui {
+            timeout-ms = <100>;
+            key-positions = <2 12>;
+            bindings = <&sk LGUI>;
+            layers = <0 1 2>;
+        };
+         combo_sk_rgui {
+            timeout-ms = <100>;
+            key-positions = <7 17>;
+            bindings = <&sk RGUI>;
+            layers = <0 1 2>;
+        };
+        
+            combo_tab {
+            timeout-ms = <50>;
+            key-positions = <13 14>;
+            bindings = <&kp TAB>;
+            layers = <0 1 2>;
+        };
+        
+            combo_colon {
+            timeout-ms = <100>;
+            key-positions = <17 27>;
+            bindings = <&kp COLON>;
+            layers = <0 1 2>;
+        };
+            combo_alt_instant {
+            timeout-ms = <70>;
+            key-positions = <1 11>;
+            bindings = <&kp LALT>;
+            layers = <0>;
+        };
+
+            combo_ctl_instant {
+            timeout-ms = <70>;
+            key-positions = <11 21>;
+            bindings = <&kp LCTRL>;
+            layers = <0>;
+        };
+        
+        
+           combo_meh_layer {
+            timeout-ms = <50>;
+            key-positions = <3 13>;
+            bindings = <&sl 7>;
+            layers = <0 1 2>;
+        };
+           combo_copy {
+            timeout-ms = <120>;
+            key-positions = <21 23>;
+            bindings = <&kp LG(C)>;
+            layers = <0 1 2>;
+        };
+           combo_alfred {
+            timeout-ms = <50>;
+            key-positions = <6 16>;
+            bindings = <&kp LA(SPACE)>;
+            layers = <0 1 2>;
+        };
+           combo_paste {
+            timeout-ms = <120>;
+            key-positions = <21 22 23>;
+            bindings = <&kp LG(V)>;
+            layers = <0 1 2>;
+        };
+            combo_caps_word {
+            timeout-ms = <120>;
+            key-positions = <11 12 13>;
+            bindings = <&caps_word>;
+            layers = <0 1 2>;
+        };
+    }
+
+
     behaviors {
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
