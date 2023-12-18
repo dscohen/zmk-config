@@ -10,11 +10,12 @@
 #define default_l 0
 #define nums_l    1
 #define syms_l    2
-#define arrows_l  3
-#define tmux_l    4
-#define helper_l  5
-#define window_l  6
-#define backup_l  7
+#define artsey_l  3
+#define arrows_l  4
+#define tmux_l    5
+#define helper_l  6
+#define window_l  7
+#define backup_l  8
 
 
 // #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
