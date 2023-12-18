@@ -535,7 +535,7 @@
            &kp COMMA   &kp DOT 	 &sk LGUI   &none       &none  	      &kp MINUS   &kp RBKT &none      &none   &none  
         //│  ,       │  .       │  RGUI    │          │          │   │  -       │  ]       │          │          │          │
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp trans        &trans     &trans
+                                             &trans     &trans        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
