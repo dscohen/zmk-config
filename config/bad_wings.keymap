@@ -25,6 +25,11 @@
 / {
 
         macros {
+            ZMK_MACRO(warpd,
+                wait-ms = <30>;
+                tap-ms = <40>;
+                bindings = <&sk LALT &sk LALT &kp F >;
+                )
             ZMK_MACRO(ff_tab,
                     wait-ms = <30>;
                     tap-ms = <40>;
@@ -528,7 +533,7 @@
              &kp B      &kp L      &kp D      &kp C      &kp V         &kp Z      &kp Y      &kp O      &kp U      &kp ENTER
              &kp N    &kp R     &kp T     &kp S          &lt 4 G       &lt 1 P    &kp H      &kp A     &kp E    &kp I
              &kp Q       &kp X     &kp M     &kp W       &kp J         &kp K      &kp F      &kp COMMA    &kp DOT   &kp SQT
-                                      &none   &skq LSHIFT  &sl 2  	   	   &kp SPACE  &sl helper_l &kp ENTER
+                                      &none   &skq LSHIFT  &warpd  	   	   &kp SPACE  &sl helper_l &kp ENTER
             >;
         };
 
