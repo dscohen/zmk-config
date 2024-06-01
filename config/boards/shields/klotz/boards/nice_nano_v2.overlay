@@ -1,5 +1,47 @@
 #include <dt-bindings/led/led.h>
 
+// &pwm0 {
+//   status = "okay";
+//   pinctrl-0 = <&pwm0_default>;
+//   pinctrl-1 = <&pwm0_sleep>;
+//   pinctrl-names = "default", "sleep";
+// };
+
+// &pinctrl {
+//     pwm0_default: pwm0_default {
+//         group1 {
+//             // Use P1.04 for LED backlight
+//             psels = <NRF_PSEL(PWM_OUT0, 0, 20)>;
+// 	      };
+//         group2 {
+//             // Use P1.04 for LED backlight
+//             psels = <NRF_PSEL(PWM_OUT0, 0, 22)>;
+// 	      };
+//         group3 {
+//             // Use P1.04 for LED backlight
+//             psels = <NRF_PSEL(PWM_OUT0, 0, 24)>;
+// 	      };
+//     };
+
+//     pwm0_sleep: pwm0_sleep {
+//         group1 {
+//             // Use P1.04 for LED backlight
+//             psels = <NRF_PSEL(PWM_OUT0, 0, 20)>;
+//             low-power-enable;
+// 	      };
+//         group2 {
+//             // Use P1.04 for LED backlight
+//             psels = <NRF_PSEL(PWM_OUT0, 0, 22)>;
+//             low-power-enable;
+// 	      };
+//         group3 {
+//             // Use P1.04 for LED backlight
+//             psels = <NRF_PSEL(PWM_OUT0, 0, 24)>;
+//             low-power-enable;
+// 	      };
+//     };
+// };
+
 &pwm0 {
     status = "okay";
     ch0-pin = <20>; /* LED 0 */
