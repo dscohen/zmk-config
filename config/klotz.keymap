@@ -16,6 +16,15 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#define default_l 0
+#define nums_l    1
+#define syms_l    2
+#define artsey_l  3
+#define arrows_l  4
+#define tmux_l    5
+#define helper_l  6
+#define window_l  7
+#define backup_l  8
 / {
  macros {
             ZMK_MACRO(warpd,
