@@ -547,45 +547,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
 
-        left_parenthesis {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <3 4>;
-            timeout-ms = <50>;
-        };
-
-        right_parenthesis {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <5 6>;
-            timeout-ms = <50>;
-        };
-
-        left_bracket {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <13 14>;
-            timeout-ms = <50>;
-        };
-
-        right_bracket {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <16 15>;
-            timeout-ms = <50>;
-        };
-
-        left_brace {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <23 24>;
-            timeout-ms = <50>;
-        };
-
-        new_combo {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <25 26>;
-            timeout-ms = <50>;
-        };
-    };
 
    keymap {
         compatible = "zmk,keymap";
