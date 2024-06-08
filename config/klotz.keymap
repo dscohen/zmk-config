@@ -559,7 +559,7 @@
                                         &skq LSHIFT  &warpd  	   	   &kp SPACE  &sl helper_l
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN>;
+            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;
         };
 
         right_layer {
