@@ -509,7 +509,6 @@
             key-positions = <0 1 2 3 4>;
             bindings = <&seal_code>;
             layers = <0 1 2>;
-            }
     };
 
     macros {
