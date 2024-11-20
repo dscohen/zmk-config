@@ -29,6 +29,15 @@
 #define mouse_l  9
 / {
  macros {
+         ZMK_MACRO(seal_code,  
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = 
+                
+                 <&sk LSHFT &kp T &kp H &kp E &kp SPACE &kp S &kp E &kp A &kp L &kp SPACE &kp L &kp O &kp V &kp E &kp S &kp SPACE &kp R &kp U &kp N &kp N &kp I &kp N &kp G &kp SPACE &kp T &kp O &kp SPACE &kp T &kp H &kp E &kp SPACE &kp S &kp T &kp O &kp R &kp E>
+                ;
+         )
+        
             ZMK_MACRO(warpd,
                 wait-ms = <30>;
                 tap-ms = <40>;
@@ -509,20 +518,6 @@
             key-positions = <0 1 2 3 4>;
             bindings = <&seal_code>;
             layers = <0 1 2>;
-    };
-
-    macros {
-        seal_code: seal_code {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp T >
-                , <&macro_release &kp LSHFT>
-                , <&kp H &kp E &kp SPACE &kp S &kp E &kp A &kp L &kp SPACE &kp L &kp O &kp V &kp E &kp S &kp SPACE &kp R &kp U &kp N &kp N &kp I &kp N &kp G &kp SPACE &kp T &kp O &kp SPACE &kp T &kp H &kp E &kp SPACE &kp S &kp T &kp O &kp R &kp E>
-                ;
-        };
     };
 
 
