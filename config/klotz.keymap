@@ -27,13 +27,11 @@
 #define backup_l  8
 / {
  macros {
-            /*
             ZMK_MACRO(seal_code,
                 wait-ms = <30>;
                 tap-ms = <40>;
                 bindings = <&kp LS(T) &kp H &kp E &kp SPACE &kp S &kp E &kp A &kp L &kp SPACE &kp L &kp O &kp V &kp E &kp S &kp SPACE &kp R &kp U &kp N &kp N &kp I &kp N &kp G &kp SPACE &kp T &kp O &kp SPACE &kp T &kp H &kp E &kp SPACE &kp S &kp T &kp O &kp R &kp E>;
                 )
-            */
             ZMK_MACRO(warpd,
                 wait-ms = <30>;
                 tap-ms = <40>;
@@ -235,13 +233,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_scoot {
-            timeout-ms = <25>;
-            key-positions = <16 17>;
-            bindings = <&kp LA(D)>;
-            require-prior-idle-ms = <100>;
-            layers = <0 1 2>;
-        };
         combo_enter {
             timeout-ms = <75>;
             key-positions = <12 13>;
@@ -286,10 +277,10 @@
             bindings = <&kp BACKSPACE>;
             layers = <0 1 2 8>;
         };
-        combo_backspace_fast {
+        combo_scoot {
             timeout-ms = <15>;
             key-positions = <17 18>;
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp LA(D)>;
             layers = <0 3>;
         };
         
