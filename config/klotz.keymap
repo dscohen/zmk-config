@@ -607,9 +607,9 @@
 
 		arrows_layer {
 		bindings = <
-		&bootloader &sys_reset       &none       &kp DEL       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LA(RIGHT)    &kp LG(RIGHT) &kp LG(UP) 
+		&bootloader &sys_reset       &none       &kp DEL       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LA(RIGHT)    &kp LG(RIGHT) &kp PG_UP 
 		&none       &none       &none       &kp LSHIFT   &trans 			        &kp LEFT        &kp DOWN      &kp UP           &kp RIGHT     &trans 
-		&none       &none       &none       &kp LALT       &none                   &kp BSLH        &trans        &trans           &trans        &kp LG(DOWN)
+		&none       &none       &none       &kp LALT       &none                   &kp BSLH        &trans        &trans           &trans        &kp PG_DOWN
 					                        &trans      &kp LCTRL                  &kp SPACE  &trans 
 		>;
                     sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
