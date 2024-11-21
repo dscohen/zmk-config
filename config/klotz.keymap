@@ -584,7 +584,7 @@
                                              &trans     &trans        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
-              sensor-bindings = <&inc_dec_kp PG_UP PG_DOWN &inc_dec_kp RIGHT LEFT>;
+              sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp RIGHT LEFT>;
         };
 
         syms_layer {
@@ -609,7 +609,7 @@
 		bindings = <
 		&bootloader &sys_reset       &none       &kp DEL       &none    			    &kp LG(LEFT)    &kp LA(LEFT)  &kp LA(RIGHT)    &kp LG(RIGHT) &kp PG_UP 
 		&none       &none       &none       &kp LSHIFT   &trans 			        &kp LEFT        &kp DOWN      &kp UP           &kp RIGHT     &trans 
-		&none       &none       &none       &kp LALT       &none                   &kp BSLH        &trans        &trans           &trans        &kp PG_DOWN
+		&none       &none       &none       &kp LALT       &none                   &kp BSLH        &trans        &trans           &trans        &kp PG_DN
 					                        &trans      &kp LCTRL                  &kp SPACE  &trans 
 		>;
                 sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LA(RIGHT) LA(LEFT)>;
