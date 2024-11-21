@@ -570,7 +570,7 @@
         };
 
         right_layer {
-            bindings = <
+            bindings    = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
             &kp N5       &kp N6    &kp N7     &kp N8       &kp N9	  &kp EQUAL   &kp LBKT &none      &sys_reset   &bootloader
         //│  5       │  6       │  7       │  8       │  9       │   │  =       │  [       │          │          │          │
@@ -584,7 +584,7 @@
                                              &trans     &trans        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
-            sensor-bindings = <&inc_dec_kp UP DOWN>;
+              sensor-bindings = <&inc_dec_kp PG_UP PG_DOWN &inc_dec_kp RIGHT LEFT>;
         };
 
         syms_layer {
@@ -593,7 +593,7 @@
 		&kp LBKT    &kp RBKT    &kp LPAR    &kp RPAR    &mo 4 		      &lt 1 EQUAL   &kp PLUS &kp MINUS    &kp FSLH   &kp ASTERISK
 		&sk LSHIFT  &none 	    &kp LG(C)    &kp LG(V)    &kp PIPE 	                &kp AMPS      &kp UNDER &kp DLLR    &kp EXCL   &kp TILDE 
 		>;
-                    sensor-bindings = <&inc_dec_kp UP DOWN>;
+                      sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;
         };
         artsey_layer {
 		bindings = <
@@ -612,7 +612,7 @@
 		&none       &none       &none       &kp LALT       &none                   &kp BSLH        &trans        &trans           &trans        &kp PG_DOWN
 					                        &trans      &kp LCTRL                  &kp SPACE  &trans 
 		>;
-                    sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
+                sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LA(RIGHT) LA(LEFT)>;
 		};	
 
         tmux_layer {
