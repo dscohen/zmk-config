@@ -234,9 +234,10 @@
         compatible = "zmk,combos";
 
         combo_scoot {
-            timeout-ms = <50>;
+            timeout-ms = <25>;
             key-positions = <16 17>;
             bindings = <&kp LA(D)>;
+            require-prior-idle-ms = <100>;
             layers = <0 1 2>;
         };
         combo_enter {
@@ -382,12 +383,14 @@
             timeout-ms = <50>;
             key-positions = <6 7>;
             bindings = <&kp LPRN>;
+            require-prior-idle-ms = <100>;
             layers = <0 1 2 8>;
         };
                    combo_lbrn {
             timeout-ms = <120>;
             key-positions = <7 8>;
             bindings = <&kp RPRN>;
+            require-prior-idle-ms = <100>;
             layers = <0 1 2 8>;
         };
                    combo_qstn {
