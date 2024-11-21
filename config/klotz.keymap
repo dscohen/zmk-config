@@ -233,8 +233,14 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_enter {
+        combo_scoot {
             timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&kp LA(D)>;
+            layers = <0 1 2>;
+        };
+        combo_enter {
+            timeout-ms = <75>;
             key-positions = <12 13>;
             bindings = <&key_repeat>;
             require-prior-idle-ms = <100>;
