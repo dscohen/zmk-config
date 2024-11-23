@@ -27,6 +27,11 @@
 #define backup_l  8
 / {
  macros {
+            ZMK_MACRO(osm_meh,
+                wait-ms = <30>;
+                tap-ms = <40>;
+                bindings = <&sk LCTRL &sk LALT &sk LSHIFT;
+                )
             ZMK_MACRO(seal_code,
                 wait-ms = <30>;
                 tap-ms = <40>;
@@ -333,12 +338,14 @@
 
         
         
-           combo_meh_layer {
+        /*
+        combo_meh_layer {
             timeout-ms = <50>;
             key-positions = <3 13>;
             bindings = <&sl 7>;
             layers = <0 1 2>;
         };
+        */
            combo_copy {
             timeout-ms = <120>;
             key-positions = <21 23>;
@@ -501,6 +508,16 @@
             timeout-ms = <120>;
             key-positions = <3 14>;
             bindings = <&kp DLLR>;
+            layers = <0 1 2>;
+        };
+        /*
+        * Nav comboas
+        */
+
+        combo_meh {
+            timeout-ms = <120>;
+            key-positions = <3 13>;
+            bindings = <&sk LCTRL &sk LALT &sk LSHIFT>;
             layers = <0 1 2>;
         };
 
