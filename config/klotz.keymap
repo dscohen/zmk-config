@@ -517,7 +517,7 @@
         combo_meh {
             timeout-ms = <120>;
             key-positions = <3 13>;
-            bindings = <&osm_meh_macro>;
+            bindings = <&sk LS(LC(LALT)) >;
             layers = <0 1 2>;
         };
 
