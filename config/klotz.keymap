@@ -27,10 +27,10 @@
 #define backup_l  8
 / {
  macros {
-            ZMK_MACRO(osm_meh,
+            ZMK_MACRO(osm_meh_macro,
                 wait-ms = <30>;
                 tap-ms = <40>;
-                bindings = <&sk LCTRL &sk LALT &sk LSHIFT;
+                bindings = <&sk LCTRL &sk LALT &sk LSHIFT>;
                 )
             ZMK_MACRO(seal_code,
                 wait-ms = <30>;
@@ -290,10 +290,10 @@
         };
         combo_seal {
             timeout-ms = <75>;
-            key-positions = <0 1 2 3 4>;
+            key-positions = <0 1 2 3>;
             bindings = <&seal_code>;
             layers = <0 1 2>;
-        }
+        };
         
             combo_repeat {
             timeout-ms = <50>;
