@@ -28,8 +28,8 @@
 / {
  macros {
             ZMK_MACRO(osm_meh_macro,
-                wait-ms = <30>;
-                tap-ms = <40>;
+                wait-ms = <10>;
+                tap-ms = <10>;
                 bindings = <&sk LCTRL &sk LALT &sk LSHIFT>;
                 )
             ZMK_MACRO(seal_code,
@@ -517,7 +517,7 @@
         combo_meh {
             timeout-ms = <120>;
             key-positions = <3 13>;
-            bindings = <&sk LCTRL &sk LALT &sk LSHIFT>;
+            bindings = <&osm_meh_macro>;
             layers = <0 1 2>;
         };
 
