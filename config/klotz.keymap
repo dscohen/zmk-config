@@ -16,6 +16,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/mouse.h>
 #define default_l 0
 #define nums_l    1
 #define syms_l    2
@@ -239,13 +240,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_enter {
-            timeout-ms = <75>;
-            key-positions = <12 13>;
-            bindings = <&key_repeat>;
-            require-prior-idle-ms = <100>;
-            layers = <0 1 2>;
-        };
         combo_esc {
             timeout-ms = <50>;
             key-positions = <27 28>;
@@ -369,12 +363,6 @@
             timeout-ms = <120>;
             key-positions = <21 22 23>;
             bindings = <&kp LG(V)>;
-            layers = <0 1 2>;
-        };
-            combo_caps_word {
-            timeout-ms = <120>;
-            key-positions = <11 12 13>;
-            bindings = <&caps_word>;
             layers = <0 1 2>;
         };
         /*
@@ -529,6 +517,28 @@
         };
 
         /*
+        * MOUSE COMBOS
+        */
+        combo_Lmouse {
+            timeout-ms = <120>;
+            key-positions = <11 12 13>;
+            bindings = <&MB2>;
+            layers = <0 1 2>;
+        };
+        combo_Rmouse {
+            timeout-ms = <90>;
+            key-positions = <12 13>;
+            bindings = <&MB1>;
+            layers = <0 1 2>;
+            require-prior-idle-ms = <100>;
+        };
+        combo_Mmouse {
+            timeout-ms = <100>;
+            key-positions = <10 11 12 13>;
+            bindings = <&MB3>;
+            layers = <0 1 2>;
+        };
+        /*
         * LAYER COMBOS
         */
             combo_tmux {
@@ -658,7 +668,7 @@
 		helper_layer {
 		bindings = <
 		&kp LC(LS(F14)) &kp LC(LS(F15)) &kp LC(LS(F16)) &kp LC(LS(F17)) &kp LC(LS(F18)) 		    &bt BT_SEL 0    &bt BT_SEL 1 &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_CLR
-		&kp LC(LS(N0)) &kp LC(LS(N6)) &kp LC(LS(N7)) &kp LC(LS(N8)) &kp LC(LS(N9))  		    &kp LEFT        &to default_l      &to shortcat_l             &kp RIGHT   &kp K_MUTE 
+		&kp LC(LS(N0)) &kp LC(LS(N6)) &kp LC(LS(N7)) &kp LC(LS(N8)) &kp LC(LS(N9))  		    &kp LEFT        &to default_l      &mo shortcat_l             &kp RIGHT   &kp K_MUTE 
 		&kp LC(LS(N1))  &kp LC(LS(N2)) &kp LC(LS(N3)) &kp LC(LS(N4)) &kp LC(LS(N5))   			&kp C_PREV  &kp C_PP  &kp C_NEXT           &kp C_VOL_UP  &kp C_VOL_DN   
 					                        &trans      &trans  			    &trans &trans 
 		>;
