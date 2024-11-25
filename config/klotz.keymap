@@ -266,7 +266,7 @@
         };
         combo_norm_ctrl {
             timeout-ms = <120>;
-            key-positions = <20 21 22>;
+            key-positions = <26 27 28>;
             bindings = <&kp LCTRL>;
             layers = <0 1 2>;
         };
