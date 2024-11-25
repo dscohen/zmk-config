@@ -522,20 +522,20 @@
         combo_Lmouse {
             timeout-ms = <120>;
             key-positions = <11 12 13>;
-            bindings = <&MB2>;
+            bindings = <&mkp MB3>;
             layers = <0 1 2>;
         };
         combo_Rmouse {
             timeout-ms = <90>;
             key-positions = <12 13>;
-            bindings = <&MB1>;
+            bindings = <&mkp MB1>;
             layers = <0 1 2>;
             require-prior-idle-ms = <100>;
         };
         combo_Mmouse {
             timeout-ms = <100>;
             key-positions = <10 11 12 13>;
-            bindings = <&MB3>;
+            bindings = <&mkp MB2>;
             layers = <0 1 2>;
         };
         /*
